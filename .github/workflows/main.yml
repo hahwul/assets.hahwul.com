@@ -33,23 +33,23 @@ jobs:
       - name: Last change
         run: ./tools/last_change.sh
       - name: Git Commit
-      run: |
-        git config --local user.email "hahwul@gmail.com"
-        git config --local user.name "Mattias"
-        git add docs/*
-        git commit -m "Add changes"
+        run: |
+          git config --local user.email "hahwul@gmail.com"
+          git config --local user.name "Mattias"
+          git add docs/*
+          git commit -m "Add changes"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@master
         env:
-        SLACK_CHANNEL: '#frozen'
-        SLACK_COLOR: '#3278BD'
-        SLACK_ICON: https://user-images.githubusercontent.com/13212227/106483059-75222500-64f1-11eb-8b9e-a61743762e9d.png
-        SLACK_MESSAGE: 'Nothing unusual :D'
-        SLACK_TITLE: asset-of-hahwul.com job finish!
-        SLACK_USERNAME: Mattias
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: '#frozen'
+          SLACK_COLOR: '#3278BD'
+          SLACK_ICON: https://user-images.githubusercontent.com/13212227/106483059-75222500-64f1-11eb-8b9e-a61743762e9d.png
+          SLACK_MESSAGE: 'Nothing unusual :D'
+          SLACK_TITLE: asset-of-hahwul.com job finish!
+          SLACK_USERNAME: Mattias
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
