@@ -1,0 +1,55 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Getting subs
+        run: ./tools/subs.sh
+
+      # Runs a set of commands using the runners shell
+      - name: Last change
+        run: ./tools/last_change.sh
+      - name: Git Commit
+      run: |
+        git config --local user.email "hahwul@gmail.com"
+        git config --local user.name "Mattias"
+        git add docs/*
+        git commit -m "Add changes"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@master
+        env:
+        SLACK_CHANNEL: '#frozen'
+        SLACK_COLOR: '#3278BD'
+        SLACK_ICON: https://user-images.githubusercontent.com/13212227/106483059-75222500-64f1-11eb-8b9e-a61743762e9d.png
+        SLACK_MESSAGE: 'Nothing unusual :D'
+        SLACK_TITLE: asset-of-hahwul.com job finish!
+        SLACK_USERNAME: Mattias
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
