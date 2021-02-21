@@ -5,6 +5,3 @@ wget https://raw.githubusercontent.com/KingOfBugbounty/KingOfBugBountyTips/maste
 wc -l docs/subs.txt | cut -d " " -f 1 | tee ./docs/line-subs.txt
 ls -alh docs/subs.txt | cut -d " " -f 5 | tee ./docs/size-subs.txt
 
-
-# Make http
-#httpx -l docs/subs.txt -title -web-server -threads 500 -status-code -o docs/http.txt
