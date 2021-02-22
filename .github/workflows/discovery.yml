@@ -31,8 +31,8 @@ jobs:
         run: ./tools/dependency.sh
       - name: Getting subs
         run: ./tools/subs.sh
-      - name: Getting http URLs
-        run: ./tools/http.sh
+      #- name: Getting http URLs
+      #  run: ./tools/http.sh
 
       # Runs a set of commands using the runners shell
       - name: Last change
