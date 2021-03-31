@@ -31,6 +31,8 @@ jobs:
         run: ./tools/dependency.sh
       - name: Getting subs
         run: ./tools/subs.sh
+      - name: Getting subnames
+        run: ./tools/subnames.sh
       - name: Getting http URLs
         run: ./tools/http.sh
 
