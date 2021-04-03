@@ -25,7 +25,7 @@ wget https://raw.githubusercontent.com/PortSwigger/xss-cheatsheet-data/master/js
 
 wget https://raw.githubusercontent.com/PortSwigger/xss-cheatsheet-data/master/json/useful_tags.json -O ps-useful-tags.json
 
-cat ps-*.json | gron | grep ".code" | ~/go/bin/gron -u | tee docs/portswigger-xss.json
+cat ps-*.json | ~/go/bin/gron | grep ".code" | ~/go/bin/gron -u | tee docs/portswigger-xss.json
 
 # Calc subs
 LINE=`wc -l docs/wl-eventhandler.txt | cut -d " " -f 1`
