@@ -1,5 +1,5 @@
 # Make http
-# ~/go/bin/httpx -l docs/subs.txt -threads 2000 -status-code -o docs/bounty-http.txt
+~/go/bin/httpx -l docs/bounty-subs.txt -threads 2000 -status-code -o docs/bounty-http.txt
 
 # wc -l docs/bounty-http.txt | cut -d " " -f 1 | tee ./docs/line-bounty-http.txt
 # ls -alh docs/bounty-http.txt | cut -d " " -f 5 | tee ./docs/size-bounty-http.txt

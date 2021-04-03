@@ -1,5 +1,5 @@
 # Run 
-cat docs/subs.txt | rev | cut -d "." -f 3-9999 | rev  | sort -u > docs/bounty-subnames.txt
+cat docs/bounty-subs.txt | rev | cut -d "." -f 3-9999 | rev  | sort -u > docs/bounty-subnames.txt
 
 # Calc subnames
 LINE=`wc -l docs/bounty-subnames.txt | cut -d " " -f 1`
