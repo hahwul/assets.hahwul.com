@@ -7,4 +7,5 @@
 # Calc http
 LINE=`wc -l docs/http.txt | cut -d " " -f 1`
 SIZE=`ls -alh docs/http.txt | cut -d " " -f 5`
-echo \{\"path\":\"http.txt\",\"line\":\"$LINE\",\"size\":\"$SIZE\"\} > docs/http.json
+LDATE=`date -R`
+echo \{\"path\":\"http.txt\",\"line\":\"$LINE\",\"size\":\"$SIZE\",\"date\":\"$LDATE\"\} > docs/http.json
