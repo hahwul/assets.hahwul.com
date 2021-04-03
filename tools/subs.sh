@@ -5,4 +5,4 @@ wget https://raw.githubusercontent.com/KingOfBugbounty/KingOfBugBountyTips/maste
 LINE=`wc -l docs/subs.txt | cut -d " " -f 1`
 SIZE=`ls -alh docs/subs.txt | cut -d " " -f 5`
 LDATE=`date -R`
-echo \{\"path\":\"subs.txt\",\"line\":\"$LINE\",\"size\":\"$SIZE\"\"date\":\"$LDATE\"\} > docs/subs.json
+echo \{\"path\":\"subs.txt\",\"line\":\"$LINE\",\"size\":\"$SIZE\",\"date\":\"$LDATE\"\} > docs/subs.json
