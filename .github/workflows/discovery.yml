@@ -35,6 +35,8 @@ jobs:
         run: ./tools/subnames.sh
       - name: Getting http URLs
         run: ./tools/http.sh
+      - name: Getting wordlists
+        run: ./tools/wordlists.sh
 
       # Runs a set of commands using the runners shell
       - name: Last change
