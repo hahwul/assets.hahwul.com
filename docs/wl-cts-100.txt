@@ -16,8 +16,8 @@ blog
 m
 mesh
 shop
-api
 demo
+api
 vpn
 whm
 store
@@ -35,8 +35,8 @@ magento
 ipv6
 web
 en
-eu
 azurecertificateservice
+eu
 pop
 us
 prod
@@ -88,8 +88,8 @@ sandbox
 *.1
 wap
 multisan
-acmeproxy-md
 wordpress
+acmeproxy-md
 redirect
 my
 jp
