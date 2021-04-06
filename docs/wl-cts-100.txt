@@ -62,8 +62,8 @@ containers
 wp
 p
 eu2
-crm
 secure
+crm
 br
 multidomain-prober
 admin-eu
@@ -87,8 +87,8 @@ fr
 sandbox
 *.1
 wap
-multisan
 wordpress
+multisan
 acmeproxy-md
 redirect
 my
