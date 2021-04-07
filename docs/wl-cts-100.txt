@@ -70,8 +70,8 @@ admin-eu
 admin-us
 portal
 office
-www.blog
 net
+www.blog
 mobile
 admin-us2
 co
@@ -85,14 +85,14 @@ de
 au
 fr
 sandbox
+multisan
 *.1
 wap
 wordpress
-multisan
 acmeproxy-md
 redirect
-my
 jp
+my
 uk
 imap
 static
