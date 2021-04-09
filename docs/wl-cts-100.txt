@@ -65,8 +65,8 @@ eu2
 secure
 crm
 br
-multidomain-prober
 admin-eu
+multidomain-prober
 admin-us
 portal
 office
