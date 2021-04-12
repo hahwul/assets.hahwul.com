@@ -97,4 +97,4 @@ uk
 imap
 static
 wiki
-www.mail
+us-east-1
