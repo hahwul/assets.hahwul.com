@@ -22,8 +22,8 @@ vpn
 whm
 store
 admin
-ftl
 storage
+ftl
 app
 ftp
 database
@@ -66,8 +66,8 @@ secure
 crm
 br
 admin-eu
-multidomain-prober
 admin-us
+multidomain-prober
 portal
 office
 net
