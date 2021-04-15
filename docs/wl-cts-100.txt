@@ -22,8 +22,8 @@ vpn
 whm
 store
 admin
-storage
 ftl
+storage
 app
 ftp
 database
