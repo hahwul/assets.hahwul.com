@@ -52,8 +52,8 @@ us3
 ap
 www.test
 org
-core
 us2
+core
 stage
 www.dev
 cloudapp
@@ -96,5 +96,5 @@ my
 uk
 imap
 static
-wiki
 cache
+wiki
