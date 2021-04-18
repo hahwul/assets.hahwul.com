@@ -85,8 +85,8 @@ de
 au
 fr
 sandbox
-multisan
 *.1
+multisan
 wordpress
 wap
 redirect
@@ -94,7 +94,7 @@ acmeproxy-md
 jp
 my
 uk
+cache
 imap
 static
-cache
 wiki
