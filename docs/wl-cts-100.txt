@@ -95,6 +95,6 @@ acmeproxy-md
 my
 uk
 cache
-static
 imap
 us-east-1
+static
