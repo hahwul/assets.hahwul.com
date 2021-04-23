@@ -40,8 +40,8 @@ eu
 pop
 us
 prod
-beta
 es
+beta
 azure
 new
 bastion
@@ -96,5 +96,5 @@ my
 uk
 cache
 us-east-1
+redis
 imap
-static
