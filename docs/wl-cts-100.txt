@@ -50,8 +50,8 @@ gcp
 support
 us3
 ap
-www.test
 org
+www.test
 us2
 core
 stage
@@ -72,8 +72,8 @@ portal
 office
 net
 www.blog
-mobile
 admin-us2
+mobile
 co
 kafka
 forum
@@ -97,4 +97,4 @@ uk
 cache
 us-east-1
 redis
-imap
+static
