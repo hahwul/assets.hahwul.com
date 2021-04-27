@@ -68,8 +68,8 @@ br
 admin-eu
 admin-us
 portal
-multidomain-prober
 office
+multidomain-prober
 net
 www.blog
 admin-us2
@@ -89,8 +89,8 @@ sandbox
 redirect
 multisan
 wordpress
-wap
 jp
+wap
 my
 acmeproxy-md
 cache
