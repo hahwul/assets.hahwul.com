@@ -92,9 +92,9 @@ wordpress
 jp
 wap
 my
-acmeproxy-md
 cache
+acmeproxy-md
 uk
-us-east-1
 redis
+us-east-1
 imap
