@@ -67,8 +67,8 @@ crm
 br
 admin-eu
 admin-us
-portal
 office
+portal
 multidomain-prober
 net
 www.blog
@@ -91,8 +91,8 @@ multisan
 wordpress
 jp
 wap
-my
 cache
+my
 acmeproxy-md
 uk
 redis
