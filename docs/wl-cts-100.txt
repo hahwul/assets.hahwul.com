@@ -56,8 +56,8 @@ us2
 core
 stage
 www.dev
-containers
 cloudapp
+containers
 cdn
 wp
 secure
@@ -90,8 +90,8 @@ redirect
 multisan
 wordpress
 jp
-wap
 cache
+wap
 my
 acmeproxy-md
 uk
