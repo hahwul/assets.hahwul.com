@@ -38,8 +38,8 @@ web
 azurecertificateservice
 eu
 pop
-us
 prod
+us
 es
 azure
 beta
@@ -61,8 +61,8 @@ containers
 cdn
 wp
 secure
-eu2
 p
+eu2
 crm
 br
 admin-eu
