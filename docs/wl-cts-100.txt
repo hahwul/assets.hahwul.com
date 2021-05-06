@@ -43,8 +43,8 @@ us
 es
 azure
 beta
-new
 bastion
+new
 gcp
 1
 support
@@ -63,14 +63,14 @@ wp
 secure
 p
 eu2
-crm
 br
+crm
 admin-eu
 admin-us
 portal
 office
-multidomain-prober
 net
+multidomain-prober
 www.blog
 admin-us2
 co
@@ -86,8 +86,8 @@ au
 fr
 sandbox
 *.1
-redirect
 multisan
+redirect
 wordpress
 jp
 cache
