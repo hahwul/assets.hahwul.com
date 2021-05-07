@@ -61,8 +61,8 @@ containers
 cdn
 wp
 secure
-p
 eu2
+p
 br
 crm
 admin-eu
@@ -93,8 +93,8 @@ jp
 cache
 wap
 my
-acmeproxy-md
 uk
+acmeproxy-md
 redis
 us-east-1
 imap
