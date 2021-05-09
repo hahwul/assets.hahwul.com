@@ -54,9 +54,9 @@ org
 www.test
 us2
 core
+cloudapp
 stage
 www.dev
-cloudapp
 containers
 cdn
 secure
