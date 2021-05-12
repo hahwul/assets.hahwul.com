@@ -89,12 +89,12 @@ sandbox
 multisan
 jp
 cache
-redirect
 wordpress
+redirect
 my
 wap
 redis
 uk
-acmeproxy-md
 us-east-1
+acmeproxy-md
 imap
