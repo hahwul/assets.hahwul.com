@@ -47,9 +47,9 @@ bastion
 new
 gcp
 1
+ap
 us3
 support
-ap
 org
 www.test
 us2
@@ -84,9 +84,9 @@ stg
 de
 au
 fr
+multisan
 sandbox
 *.1
-multisan
 cache
 jp
 wordpress
