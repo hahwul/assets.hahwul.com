@@ -89,8 +89,8 @@ sandbox
 *.1
 cache
 jp
-wordpress
 redirect
+wordpress
 my
 wap
 us-east-1
