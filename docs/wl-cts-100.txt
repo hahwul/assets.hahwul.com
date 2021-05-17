@@ -85,15 +85,15 @@ de
 au
 fr
 multisan
-sandbox
 *.1
+sandbox
 cache
 jp
 redirect
 wordpress
 my
-wap
 us-east-1
+wap
 redis
 uk
 acmeproxy-md
