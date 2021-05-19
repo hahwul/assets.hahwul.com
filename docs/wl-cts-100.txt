@@ -47,9 +47,9 @@ bastion
 new
 gcp
 1
-us3
-support
 ap
+support
+us3
 org
 www.test
 us2
@@ -70,8 +70,8 @@ admin-us
 net
 portal
 office
-multidomain-prober
 admin-us2
+multidomain-prober
 www.blog
 co
 kafka
@@ -82,13 +82,13 @@ media
 worker
 stg
 de
-au
 fr
+au
 multisan
 *.1
 sandbox
-cache
 jp
+cache
 redirect
 wordpress
 my
