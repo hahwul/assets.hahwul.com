@@ -53,8 +53,8 @@ us3
 org
 www.test
 us2
-core
 cloudapp
+core
 stage
 www.dev
 containers
@@ -96,5 +96,5 @@ us-east-1
 wap
 redis
 uk
-acmeproxy-md
 imap
+acmeproxy-md
