@@ -48,8 +48,8 @@ new
 gcp
 1
 ap
-support
 us3
+support
 org
 www.test
 us2
@@ -91,8 +91,8 @@ jp
 cache
 redirect
 wordpress
-my
 us-east-1
+my
 wap
 redis
 uk
