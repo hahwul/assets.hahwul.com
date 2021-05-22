@@ -56,8 +56,8 @@ us2
 cloudapp
 core
 stage
-www.dev
 containers
+www.dev
 cdn
 secure
 wp
@@ -71,8 +71,8 @@ net
 portal
 office
 admin-us2
-multidomain-prober
 www.blog
+multidomain-prober
 co
 kafka
 mobile
@@ -82,15 +82,15 @@ media
 worker
 stg
 de
+multisan
 fr
 au
-multisan
 *.1
 sandbox
 jp
 cache
-redirect
 wordpress
+redirect
 us-east-1
 my
 wap
