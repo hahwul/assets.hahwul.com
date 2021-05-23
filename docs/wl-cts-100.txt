@@ -25,8 +25,8 @@ admin
 app
 ftl
 storage
-database
 ftp
+database
 smtp
 cloud
 tls
@@ -89,8 +89,8 @@ au
 sandbox
 jp
 cache
-wordpress
 redirect
+wordpress
 us-east-1
 my
 wap
