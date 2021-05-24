@@ -36,8 +36,8 @@ ipv6
 en
 azurecertificateservice
 web
-eu
 pop
+eu
 us
 es
 prod
@@ -48,8 +48,8 @@ new
 gcp
 1
 ap
-us3
 support
+us3
 org
 www.test
 us2
@@ -77,8 +77,8 @@ co
 kafka
 mobile
 forum
-in
 media
+in
 worker
 stg
 de
