@@ -25,8 +25,8 @@ admin
 app
 ftl
 storage
-ftp
 database
+ftp
 smtp
 cloud
 tls
