@@ -38,8 +38,8 @@ azurecertificateservice
 web
 pop
 eu
-us
 es
+us
 prod
 azure
 beta
@@ -93,8 +93,8 @@ redirect
 wordpress
 us-east-1
 my
-wap
 redis
+wap
 uk
 imap
 acmeproxy-md
