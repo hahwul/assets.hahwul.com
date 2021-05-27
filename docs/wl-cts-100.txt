@@ -72,9 +72,9 @@ portal
 office
 admin-us2
 www.blog
-multidomain-prober
-co
 kafka
+co
+multidomain-prober
 mobile
 forum
 media
@@ -86,8 +86,8 @@ multisan
 fr
 au
 *.1
-sandbox
 jp
+sandbox
 cache
 redirect
 wordpress
