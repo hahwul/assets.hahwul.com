@@ -67,8 +67,8 @@ br
 crm
 admin-eu
 admin-us
-net
 portal
+net
 office
 admin-us2
 www.blog
@@ -87,8 +87,8 @@ fr
 au
 *.1
 jp
-sandbox
 cache
+sandbox
 redirect
 wordpress
 us-east-1
