@@ -41,6 +41,8 @@ jobs:
         run: ./tools/portswigger-xss.sh
       - name: Getting subdomain names from cts
         run: ./tools/cts.sh
+      - name: Getting payloadbox xss file
+        run: ./tools/wl-payloadbox-xss.sh
 
       # Runs a set of commands using the runners shell
       - name: Last change
