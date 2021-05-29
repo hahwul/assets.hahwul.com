@@ -25,15 +25,16 @@ wget https://raw.githubusercontent.com/PortSwigger/xss-cheatsheet-data/master/js
 
 wget https://raw.githubusercontent.com/PortSwigger/xss-cheatsheet-data/master/json/useful_tags.json -O ps-useful-tags.json
 
-cat ps-*.json | ~/go/bin/gron | grep ".code" | ~/go/bin/gron -u | tee docs/portswigger-xss.json
+# make xss payloads
+cat ps-*.json | grep "\"code\"" | cut -d "\"" -f 4-9999 | tee docs/xss-portswigger.txt
 
-# Calc subs
+# Calc
 LINE=`wc -l docs/wl-eventhandler.txt | cut -d " " -f 1`
 SIZE=`ls -alh docs/wl-eventhandler.txt | cut -d " " -f 5`
 LDATE=`date -R`
 echo \{\"path\":\"wl-eventhandler.txt\",\"line\":\"$LINE\",\"size\":\"$SIZE\",\"date\":\"$LDATE\"\} > docs/wl-eventhandler.json
 
-LINE=`wc -l docs/portswigger-xss.json | cut -d " " -f 1`
-SIZE=`ls -alh docs/portswigger-xss.json | cut -d " " -f 5`
+LINE=`wc -l docs/xss-portswigger.txt | cut -d " " -f 1`
+SIZE=`ls -alh docs/xss-portswigger.txt | cut -d " " -f 5`
 LDATE=`date -R`
-echo \{\"path\":\"portswigger-xss.json\",\"line\":\"$LINE\",\"size\":\"$SIZE\",\"date\":\"$LDATE\"\} > docs/portswigger-xss-info.json
+echo \{\"path\":\"xss-portswigger.txt\",\"line\":\"$LINE\",\"size\":\"$SIZE\",\"date\":\"$LDATE\"\} > docs/xss-portswigger.json
