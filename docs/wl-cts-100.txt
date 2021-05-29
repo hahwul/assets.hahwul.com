@@ -71,8 +71,8 @@ portal
 net
 office
 admin-us2
-www.blog
 kafka
+www.blog
 co
 multidomain-prober
 mobile
@@ -86,12 +86,12 @@ multisan
 fr
 au
 *.1
-jp
 cache
+jp
 sandbox
 redirect
-wordpress
 us-east-1
+wordpress
 my
 redis
 wap
