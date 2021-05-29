@@ -1,4 +1,4 @@
-wget https://raw.githubusercontent.com/payloadbox/xss-payload-list/master/Intruder/xss-payload-list.txt -o docs/wl-payloadbox-xss.txt
+wget https://raw.githubusercontent.com/payloadbox/xss-payload-list/master/Intruder/xss-payload-list.txt -O docs/wl-payloadbox-xss.txt
 
 # Calc subs
 LINE=`wc -l docs/wl-payloadbox-xss.txt | cut -d " " -f 1`
