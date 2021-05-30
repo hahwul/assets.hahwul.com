@@ -86,11 +86,11 @@ multisan
 fr
 au
 *.1
-cache
 jp
+cache
 sandbox
-redirect
 us-east-1
+redirect
 wordpress
 my
 redis
