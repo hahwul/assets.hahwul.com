@@ -35,8 +35,8 @@ magento
 ipv6
 en
 azurecertificateservice
-web
 pop
+web
 eu
 es
 us
@@ -85,8 +85,8 @@ de
 multisan
 fr
 au
-*.1
 jp
+*.1
 cache
 sandbox
 us-east-1
