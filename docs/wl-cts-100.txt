@@ -24,8 +24,8 @@ store
 admin
 app
 ftl
-storage
 database
+storage
 ftp
 smtp
 cloud
@@ -70,8 +70,8 @@ admin-us
 portal
 net
 office
-admin-us2
 kafka
+admin-us2
 www.blog
 co
 multidomain-prober
@@ -88,8 +88,8 @@ au
 jp
 *.1
 cache
-sandbox
 us-east-1
+sandbox
 redirect
 wordpress
 my
