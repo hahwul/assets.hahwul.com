@@ -42,8 +42,8 @@ es
 us
 prod
 azure
-beta
 bastion
+beta
 new
 gcp
 1
@@ -86,8 +86,8 @@ multisan
 fr
 au
 jp
-*.1
 cache
+*.1
 us-east-1
 sandbox
 redirect
