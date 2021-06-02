@@ -26,7 +26,7 @@ wget https://raw.githubusercontent.com/PortSwigger/xss-cheatsheet-data/master/js
 wget https://raw.githubusercontent.com/PortSwigger/xss-cheatsheet-data/master/json/useful_tags.json -O ps-useful-tags.json
 
 # make xss payloads
-cat ps-*.json | grep "\"code\"" | cut -d "\"" -f 4-9999 | tee docs/xss-portswigger.txt
+cat ps-*.json | grep "\"code\"" | cut -d "\"" -f 4-9999 | rev | cut -d "\"" -f 2-999 | rev |tee docs/xss-portswigger.txt
 
 # Calc
 LINE=`wc -l docs/wl-eventhandler.txt | cut -d " " -f 1`
