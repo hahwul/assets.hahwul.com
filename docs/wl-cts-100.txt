@@ -40,8 +40,8 @@ web
 eu
 es
 us
-prod
 azure
+prod
 bastion
 beta
 new
