@@ -24,8 +24,8 @@ store
 admin
 app
 ftl
-database
 storage
+database
 ftp
 smtp
 cloud
@@ -35,8 +35,8 @@ magento
 ipv6
 en
 azurecertificateservice
-pop
 web
+pop
 eu
 es
 us
@@ -67,8 +67,8 @@ br
 crm
 admin-eu
 admin-us
-portal
 net
+portal
 office
 kafka
 admin-us2
@@ -87,8 +87,8 @@ fr
 au
 jp
 cache
-*.1
 us-east-1
+*.1
 sandbox
 redirect
 wordpress
