@@ -33,8 +33,8 @@ tls
 old
 magento
 ipv6
-en
 azurecertificateservice
+en
 web
 pop
 eu
