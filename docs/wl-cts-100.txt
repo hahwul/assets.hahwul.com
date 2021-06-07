@@ -23,8 +23,8 @@ whm
 store
 admin
 app
-ftl
 storage
+ftl
 database
 ftp
 smtp
@@ -67,8 +67,8 @@ br
 crm
 admin-eu
 admin-us
-net
 portal
+net
 office
 kafka
 admin-us2
@@ -80,8 +80,8 @@ forum
 media
 in
 worker
-stg
 multisan
+stg
 de
 fr
 au
