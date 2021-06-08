@@ -67,8 +67,8 @@ br
 crm
 admin-eu
 admin-us
-portal
 net
+portal
 office
 kafka
 admin-us2
