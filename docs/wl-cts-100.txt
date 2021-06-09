@@ -72,8 +72,8 @@ portal
 office
 kafka
 admin-us2
-www.blog
 co
+www.blog
 multidomain-prober
 mobile
 forum
@@ -90,8 +90,8 @@ us-east-1
 cache
 *.1
 sandbox
-wordpress
 redirect
+wordpress
 my
 redis
 wap
