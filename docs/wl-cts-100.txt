@@ -69,8 +69,8 @@ admin-eu
 admin-us
 net
 portal
-office
 kafka
+office
 admin-us2
 co
 www.blog
