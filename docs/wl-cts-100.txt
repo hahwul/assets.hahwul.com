@@ -29,8 +29,8 @@ database
 ftp
 smtp
 cloud
-tls
 old
+tls
 magento
 ipv6
 azurecertificateservice
@@ -84,9 +84,9 @@ multisan
 stg
 de
 fr
-au
 jp
 us-east-1
+au
 cache
 *.1
 sandbox
