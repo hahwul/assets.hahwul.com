@@ -37,8 +37,8 @@ azurecertificateservice
 en
 web
 pop
-eu
 es
+eu
 us
 azure
 prod
@@ -57,8 +57,8 @@ cloudapp
 core
 stage
 containers
-www.dev
 secure
+www.dev
 cdn
 wp
 eu2
@@ -78,8 +78,8 @@ multidomain-prober
 mobile
 forum
 media
-in
 worker
+in
 multisan
 stg
 de
@@ -90,8 +90,8 @@ au
 cache
 *.1
 sandbox
-redirect
 wordpress
+redirect
 my
 redis
 wap
