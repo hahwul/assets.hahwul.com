@@ -32,8 +32,8 @@ cloud
 old
 tls
 magento
-ipv6
 azurecertificateservice
+ipv6
 en
 web
 pop
@@ -84,8 +84,8 @@ multisan
 stg
 de
 fr
-jp
 us-east-1
+jp
 au
 cache
 *.1
