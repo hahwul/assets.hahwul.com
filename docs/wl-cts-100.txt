@@ -86,8 +86,8 @@ de
 fr
 us-east-1
 jp
-au
 cache
+au
 *.1
 sandbox
 wordpress
