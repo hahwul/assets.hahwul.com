@@ -39,8 +39,8 @@ web
 pop
 es
 eu
-azure
 us
+azure
 prod
 bastion
 beta
