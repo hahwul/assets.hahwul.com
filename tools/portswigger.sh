@@ -1,5 +1,5 @@
 # Get xss payloads from portswigger
-curl https://raw.githubusercontent.com/PortSwigger/xss-cheatsheet-data/master/json/events.json | gron | grep "{}" | cut -d "." -f 2 | cut -d " " -f 1 | sort -u | tee ./docs/wl-eventhandler.txt
+curl https://raw.githubusercontent.com/PortSwigger/xss-cheatsheet-data/master/json/events.json | ~/go/bin/gron | grep "{}" | cut -d "." -f 2 | cut -d " " -f 1 | sort -u | tee ./docs/wl-eventhandler.txt
 
 wget https://raw.githubusercontent.com/PortSwigger/xss-cheatsheet-data/master/json/classic.json -O ps-classic.json
 
