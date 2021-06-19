@@ -23,8 +23,8 @@ whm
 store
 admin
 app
-storage
 ftl
+storage
 database
 ftp
 smtp
