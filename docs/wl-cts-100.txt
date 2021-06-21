@@ -23,9 +23,9 @@ whm
 store
 admin
 app
+database
 ftl
 storage
-database
 ftp
 smtp
 cloud
@@ -35,8 +35,8 @@ magento
 azurecertificateservice
 en
 ipv6
-web
 pop
+web
 es
 eu
 azure
@@ -61,8 +61,8 @@ secure
 www.dev
 cdn
 wp
-eu2
 p
+eu2
 br
 crm
 admin-eu
@@ -90,8 +90,8 @@ cache
 au
 *.1
 sandbox
-wordpress
 my
+wordpress
 redirect
 redis
 wap
