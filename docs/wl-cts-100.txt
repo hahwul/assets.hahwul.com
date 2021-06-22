@@ -40,9 +40,9 @@ web
 es
 eu
 azure
+bastion
 us
 prod
-bastion
 beta
 new
 gcp
@@ -78,8 +78,8 @@ multidomain-prober
 mobile
 forum
 media
-worker
 multisan
+worker
 in
 stg
 de
@@ -92,9 +92,9 @@ au
 sandbox
 my
 wordpress
-redirect
 redis
-wap
+redirect
 uk
+wap
 imap
 acmeproxy-md
