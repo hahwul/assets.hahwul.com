@@ -39,8 +39,8 @@ pop
 web
 es
 eu
-azure
 bastion
+azure
 us
 prod
 beta
@@ -61,8 +61,8 @@ secure
 www.dev
 cdn
 wp
-p
 eu2
+p
 br
 crm
 admin-eu
