@@ -36,8 +36,8 @@ azurecertificateservice
 en
 ipv6
 pop
-web
 es
+web
 eu
 bastion
 azure
