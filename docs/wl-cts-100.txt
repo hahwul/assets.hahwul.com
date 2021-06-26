@@ -35,8 +35,8 @@ magento
 azurecertificateservice
 en
 ipv6
-pop
 es
+pop
 web
 eu
 bastion
@@ -61,15 +61,15 @@ secure
 www.dev
 cdn
 wp
-eu2
 p
+eu2
 br
 crm
 admin-eu
 admin-us
 net
-portal
 kafka
+portal
 office
 admin-us2
 co
@@ -91,8 +91,8 @@ au
 *.1
 sandbox
 my
-wordpress
 redis
+wordpress
 redirect
 uk
 wap
