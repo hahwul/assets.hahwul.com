@@ -52,8 +52,8 @@ support
 us3
 org
 www.test
-us2
 cloudapp
+us2
 core
 stage
 containers
@@ -67,8 +67,8 @@ br
 crm
 admin-eu
 admin-us
-net
 kafka
+net
 portal
 office
 admin-us2
