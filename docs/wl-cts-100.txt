@@ -52,8 +52,8 @@ support
 us3
 org
 www.test
-cloudapp
 us2
+cloudapp
 core
 stage
 containers
