@@ -52,8 +52,8 @@ support
 us3
 org
 www.test
-us2
 cloudapp
+us2
 core
 stage
 containers
@@ -83,8 +83,8 @@ worker
 in
 stg
 de
-fr
 us-east-1
+fr
 jp
 cache
 au

