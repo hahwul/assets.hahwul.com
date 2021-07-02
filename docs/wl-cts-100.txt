@@ -22,8 +22,8 @@ vpn
 whm
 store
 admin
-app
 database
+app
 ftl
 storage
 ftp
@@ -80,8 +80,8 @@ forum
 media
 multisan
 worker
-in
 stg
+in
 de
 us-east-1
 fr
@@ -90,8 +90,8 @@ cache
 au
 *.1
 sandbox
-my
 redis
+my
 wordpress
 redirect
 uk
