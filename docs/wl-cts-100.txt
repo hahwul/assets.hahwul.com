@@ -41,8 +41,8 @@ web
 eu
 bastion
 azure
-us
 prod
+us
 beta
 new
 gcp
