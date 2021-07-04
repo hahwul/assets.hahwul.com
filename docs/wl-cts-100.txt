@@ -82,15 +82,15 @@ multisan
 worker
 stg
 in
-de
 us-east-1
+de
 fr
 jp
 cache
 au
 *.1
-sandbox
 redis
+sandbox
 my
 wordpress
 redirect
