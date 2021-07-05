@@ -38,8 +38,8 @@ ipv6
 es
 pop
 web
-eu
 bastion
+eu
 azure
 prod
 us
@@ -66,8 +66,8 @@ eu2
 br
 crm
 admin-eu
-admin-us
 kafka
+admin-us
 net
 portal
 office
