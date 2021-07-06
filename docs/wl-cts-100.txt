@@ -54,8 +54,8 @@ org
 www.test
 cloudapp
 us2
-core
 stage
+core
 containers
 secure
 www.dev
@@ -81,8 +81,8 @@ media
 multisan
 worker
 stg
-in
 us-east-1
+in
 de
 fr
 jp
