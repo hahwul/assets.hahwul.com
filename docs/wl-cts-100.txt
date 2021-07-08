@@ -56,8 +56,8 @@ cloudapp
 us2
 stage
 core
-containers
 secure
+containers
 www.dev
 cdn
 wp
@@ -65,8 +65,8 @@ p
 eu2
 br
 crm
-admin-eu
 kafka
+admin-eu
 admin-us
 net
 portal
@@ -78,8 +78,8 @@ multidomain-prober
 mobile
 forum
 media
-worker
 multisan
+worker
 stg
 us-east-1
 in
