@@ -55,8 +55,8 @@ www.test
 cloudapp
 us2
 stage
-core
 secure
+core
 containers
 www.dev
 cdn
@@ -78,10 +78,10 @@ multidomain-prober
 mobile
 forum
 media
-multisan
 worker
-stg
+multisan
 us-east-1
+stg
 in
 de
 fr
