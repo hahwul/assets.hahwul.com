@@ -87,8 +87,8 @@ de
 fr
 jp
 cache
-au
 *.1
+au
 redis
 sandbox
 my
@@ -97,4 +97,4 @@ redirect
 uk
 wap
 imap
-acmeproxy-md
+static
