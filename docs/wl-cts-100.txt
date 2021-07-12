@@ -33,12 +33,12 @@ old
 tls
 magento
 azurecertificateservice
-en
 es
+en
 ipv6
 pop
-web
 bastion
+web
 eu
 azure
 prod
@@ -54,8 +54,8 @@ org
 www.test
 cloudapp
 us2
-stage
 secure
+stage
 containers
 core
 www.dev
@@ -77,8 +77,8 @@ www.blog
 multidomain-prober
 mobile
 forum
-media
 worker
+media
 multisan
 us-east-1
 stg
