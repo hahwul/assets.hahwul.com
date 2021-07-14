@@ -85,11 +85,11 @@ stg
 in
 de
 fr
-jp
 cache
+jp
 *.1
-au
 redis
+au
 sandbox
 my
 wordpress
