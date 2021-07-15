@@ -36,11 +36,11 @@ azurecertificateservice
 es
 en
 ipv6
-pop
 bastion
+pop
 web
-eu
 azure
+eu
 prod
 us
 beta
@@ -64,8 +64,8 @@ p
 wp
 eu2
 br
-crm
 kafka
+crm
 admin-eu
 admin-us
 net
@@ -87,8 +87,8 @@ de
 fr
 cache
 jp
-*.1
 redis
+*.1
 au
 sandbox
 my
