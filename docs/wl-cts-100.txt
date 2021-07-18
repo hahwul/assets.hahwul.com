@@ -77,15 +77,15 @@ www.blog
 multidomain-prober
 mobile
 forum
-worker
 media
-multisan
+worker
 us-east-1
+multisan
 stg
 in
 de
-fr
 cache
+fr
 jp
 redis
 *.1
@@ -95,6 +95,6 @@ wordpress
 my
 redirect
 uk
-wap
 imap
+wap
 static
