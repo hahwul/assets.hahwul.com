@@ -82,8 +82,8 @@ media
 worker
 us-east-1
 stg
-in
 de
+in
 cache
 fr
 jp
