@@ -78,9 +78,9 @@ multidomain-prober
 mobile
 forum
 multisan
+us-east-1
 media
 worker
-us-east-1
 stg
 de
 in
