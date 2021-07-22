@@ -51,8 +51,8 @@ ap
 support
 us3
 org
-www.test
 cloudapp
+www.test
 us2
 secure
 containers
@@ -77,10 +77,10 @@ www.blog
 multidomain-prober
 mobile
 forum
-multisan
 us-east-1
-media
+multisan
 worker
+media
 stg
 de
 in
