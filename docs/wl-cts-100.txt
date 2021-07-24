@@ -32,8 +32,8 @@ cloud
 old
 tls
 magento
-azurecertificateservice
 es
+azurecertificateservice
 en
 ipv6
 bastion
@@ -86,13 +86,13 @@ de
 in
 cache
 fr
-jp
 redis
+jp
 *.1
 au
 sandbox
-wordpress
 my
+wordpress
 redirect
 uk
 imap
