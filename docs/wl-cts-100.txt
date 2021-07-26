@@ -26,8 +26,8 @@ database
 app
 ftl
 ftp
-storage
 smtp
+storage
 cloud
 old
 tls
@@ -35,8 +35,8 @@ magento
 es
 azurecertificateservice
 en
-ipv6
 bastion
+ipv6
 pop
 web
 azure
@@ -79,8 +79,8 @@ mobile
 forum
 us-east-1
 worker
-multisan
 media
+multisan
 stg
 cache
 de
