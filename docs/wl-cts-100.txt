@@ -78,9 +78,9 @@ multidomain-prober
 mobile
 forum
 us-east-1
+multisan
 worker
 media
-multisan
 stg
 cache
 de
@@ -91,8 +91,8 @@ jp
 *.1
 au
 sandbox
-wordpress
 my
+wordpress
 redirect
 uk
 imap
