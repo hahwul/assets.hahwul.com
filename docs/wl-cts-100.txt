@@ -78,8 +78,8 @@ multidomain-prober
 mobile
 forum
 us-east-1
-multisan
 worker
+multisan
 media
 stg
 cache
