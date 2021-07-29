@@ -76,8 +76,8 @@ co
 www.blog
 multidomain-prober
 mobile
-forum
 us-east-1
+forum
 worker
 multisan
 media
@@ -91,9 +91,9 @@ jp
 *.1
 au
 sandbox
-my
-wordpress
 redirect
+wordpress
+my
 uk
 imap
 wap
