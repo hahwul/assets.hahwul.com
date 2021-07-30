@@ -45,8 +45,8 @@ prod
 us
 beta
 new
-gcp
 ap
+gcp
 1
 support
 us3
@@ -78,8 +78,8 @@ multidomain-prober
 mobile
 us-east-1
 forum
-worker
 multisan
+worker
 media
 stg
 cache
