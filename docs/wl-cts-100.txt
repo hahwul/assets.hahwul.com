@@ -38,8 +38,8 @@ en
 bastion
 ipv6
 pop
-web
 azure
+web
 eu
 prod
 us
@@ -79,10 +79,10 @@ mobile
 us-east-1
 forum
 multisan
-worker
 media
-stg
+worker
 cache
+stg
 de
 in
 redis
