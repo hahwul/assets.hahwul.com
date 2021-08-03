@@ -61,8 +61,8 @@ core
 www.dev
 cdn
 p
-wp
 eu2
+wp
 br
 kafka
 crm
