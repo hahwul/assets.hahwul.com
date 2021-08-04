@@ -84,8 +84,8 @@ worker
 cache
 stg
 de
-in
 redis
+in
 fr
 jp
 *.1
