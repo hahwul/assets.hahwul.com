@@ -24,8 +24,8 @@ store
 admin
 database
 app
-ftl
 ftp
+ftl
 smtp
 storage
 cloud
@@ -36,8 +36,8 @@ es
 azurecertificateservice
 en
 bastion
-ipv6
 pop
+ipv6
 azure
 web
 eu
@@ -78,8 +78,8 @@ multidomain-prober
 mobile
 us-east-1
 forum
-multisan
 media
+multisan
 worker
 cache
 stg
