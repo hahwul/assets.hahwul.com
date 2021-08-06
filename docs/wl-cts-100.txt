@@ -6,8 +6,8 @@ cpanel
 webdisk
 autodiscover
 sni
-cpcontacts
 cpcalendars
+cpcontacts
 com
 dev
 test
@@ -48,8 +48,8 @@ new
 ap
 gcp
 1
-support
 us3
+support
 org
 cloudapp
 www.test
@@ -74,8 +74,8 @@ office
 admin-us2
 co
 www.blog
-multidomain-prober
 mobile
+multidomain-prober
 us-east-1
 forum
 media
@@ -97,4 +97,4 @@ my
 uk
 imap
 wap
-static
+autoconfig
