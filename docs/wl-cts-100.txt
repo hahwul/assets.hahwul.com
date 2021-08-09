@@ -45,8 +45,8 @@ prod
 us
 beta
 new
-gcp
 ap
+gcp
 1
 support
 us3
@@ -63,8 +63,8 @@ cdn
 p
 eu2
 wp
-br
 kafka
+br
 crm
 admin-eu
 admin-us
@@ -79,8 +79,8 @@ us-east-1
 multidomain-prober
 forum
 media
-worker
 multisan
+worker
 cache
 stg
 de
@@ -92,8 +92,8 @@ jp
 au
 sandbox
 redirect
-wordpress
 my
+wordpress
 uk
 imap
 wap
