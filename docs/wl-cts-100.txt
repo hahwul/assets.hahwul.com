@@ -6,8 +6,8 @@ cpanel
 webdisk
 autodiscover
 sni
-cpcontacts
 cpcalendars
+cpcontacts
 com
 dev
 test
@@ -74,8 +74,8 @@ office
 admin-us2
 co
 www.blog
-mobile
 us-east-1
+mobile
 multidomain-prober
 forum
 media
