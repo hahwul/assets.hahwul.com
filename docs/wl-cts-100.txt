@@ -6,8 +6,8 @@ cpanel
 webdisk
 autodiscover
 sni
-cpcalendars
 cpcontacts
+cpcalendars
 com
 dev
 test
@@ -56,14 +56,14 @@ www.test
 us2
 secure
 containers
-stage
 core
+stage
 www.dev
 cdn
 p
 eu2
-wp
 kafka
+wp
 br
 crm
 admin-eu
@@ -78,8 +78,8 @@ us-east-1
 mobile
 multidomain-prober
 forum
-media
 multisan
+media
 worker
 cache
 stg
