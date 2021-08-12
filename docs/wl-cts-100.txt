@@ -61,8 +61,8 @@ stage
 www.dev
 cdn
 p
-eu2
 kafka
+eu2
 wp
 br
 crm
