@@ -6,8 +6,8 @@ cpanel
 webdisk
 autodiscover
 sni
-cpcontacts
 cpcalendars
+cpcontacts
 com
 dev
 test
