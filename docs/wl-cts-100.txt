@@ -78,8 +78,8 @@ us-east-1
 mobile
 multidomain-prober
 forum
-multisan
 media
+multisan
 worker
 cache
 stg
@@ -89,11 +89,11 @@ in
 fr
 jp
 *.1
-au
 sandbox
+au
 redirect
-my
 wordpress
+my
 uk
 imap
 wap
