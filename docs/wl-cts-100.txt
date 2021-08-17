@@ -37,9 +37,9 @@ azurecertificateservice
 en
 bastion
 pop
+web
 ipv6
 azure
-web
 eu
 prod
 us
@@ -53,8 +53,8 @@ us3
 org
 cloudapp
 www.test
-us2
 core
+us2
 secure
 containers
 stage
@@ -78,8 +78,8 @@ us-east-1
 mobile
 multidomain-prober
 forum
-media
 multisan
+media
 worker
 cache
 stg
@@ -91,9 +91,9 @@ jp
 *.1
 sandbox
 au
+my
 redirect
 wordpress
-my
 uk
 imap
 wap
