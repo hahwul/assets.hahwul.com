@@ -63,8 +63,8 @@ p
 cdn
 kafka
 eu2
-wp
 br
+wp
 crm
 admin-eu
 admin-us
@@ -89,8 +89,8 @@ in
 fr
 jp
 *.1
-sandbox
 au
+sandbox
 my
 redirect
 wordpress
