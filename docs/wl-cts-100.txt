@@ -89,8 +89,8 @@ in
 fr
 jp
 *.1
-au
 sandbox
+au
 my
 redirect
 wordpress
