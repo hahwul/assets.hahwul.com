@@ -31,8 +31,8 @@ smtp
 cloud
 old
 tls
-magento
 es
+magento
 azurecertificateservice
 en
 bastion
@@ -80,8 +80,8 @@ multidomain-prober
 forum
 multisan
 media
-worker
 cache
+worker
 stg
 redis
 de
@@ -92,8 +92,8 @@ jp
 sandbox
 au
 my
-redirect
 wordpress
+redirect
 uk
 imap
 wap
