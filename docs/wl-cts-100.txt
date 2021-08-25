@@ -30,8 +30,8 @@ ftl
 smtp
 cloud
 old
-tls
 es
+tls
 magento
 azurecertificateservice
 en
@@ -53,8 +53,8 @@ us3
 org
 cloudapp
 www.test
-core
 us2
+core
 secure
 containers
 stage
@@ -79,11 +79,11 @@ mobile
 multidomain-prober
 forum
 multisan
-media
 cache
+media
 worker
-stg
 redis
+stg
 de
 in
 fr
