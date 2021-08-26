@@ -92,9 +92,9 @@ jp
 sandbox
 au
 my
-wordpress
 redirect
+wordpress
 uk
 imap
 wap
-autoconfig
+hanacloud
