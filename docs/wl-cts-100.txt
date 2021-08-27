@@ -34,8 +34,8 @@ es
 tls
 magento
 azurecertificateservice
-en
 bastion
+en
 pop
 web
 ipv6
@@ -69,8 +69,8 @@ crm
 admin-eu
 admin-us
 net
-portal
 office
+portal
 admin-us2
 co
 www.blog
@@ -78,8 +78,8 @@ us-east-1
 mobile
 multidomain-prober
 forum
-multisan
 cache
+multisan
 media
 worker
 redis
