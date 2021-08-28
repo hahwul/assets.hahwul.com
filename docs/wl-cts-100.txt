@@ -58,8 +58,8 @@ core
 secure
 containers
 stage
-www.dev
 p
+www.dev
 cdn
 kafka
 eu2
@@ -69,8 +69,8 @@ crm
 admin-eu
 admin-us
 net
-office
 portal
+office
 admin-us2
 co
 www.blog
