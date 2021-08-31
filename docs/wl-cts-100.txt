@@ -38,8 +38,8 @@ bastion
 en
 pop
 web
-ipv6
 azure
+ipv6
 eu
 prod
 us
@@ -60,10 +60,10 @@ containers
 stage
 p
 www.dev
-cdn
 kafka
-eu2
+cdn
 br
+eu2
 wp
 crm
 admin-eu
@@ -97,4 +97,4 @@ wordpress
 uk
 imap
 wap
-hanacloud
+direct
