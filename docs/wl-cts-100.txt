@@ -79,14 +79,14 @@ mobile
 multidomain-prober
 forum
 cache
-media
 multisan
+media
 worker
 redis
 stg
 de
-in
 fr
+in
 jp
 *.1
 sandbox
@@ -96,5 +96,5 @@ redirect
 wordpress
 uk
 imap
-wap
 direct
+wap
