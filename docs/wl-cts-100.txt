@@ -31,8 +31,8 @@ smtp
 cloud
 old
 es
-tls
 magento
+tls
 azurecertificateservice
 bastion
 en
@@ -79,8 +79,8 @@ mobile
 multidomain-prober
 forum
 cache
-multisan
 media
+multisan
 worker
 redis
 stg
