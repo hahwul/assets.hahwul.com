@@ -37,8 +37,8 @@ azurecertificateservice
 bastion
 en
 pop
-web
 azure
+web
 ipv6
 eu
 prod
@@ -92,9 +92,9 @@ jp
 sandbox
 au
 my
-redirect
 wordpress
+redirect
+direct
 uk
 imap
-direct
-wap
+hanacloud
