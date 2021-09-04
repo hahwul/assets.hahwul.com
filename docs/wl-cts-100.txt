@@ -59,11 +59,11 @@ secure
 containers
 stage
 p
-www.dev
 kafka
+www.dev
 cdn
-br
 eu2
+br
 wp
 crm
 admin-eu
