@@ -58,8 +58,8 @@ core
 secure
 containers
 stage
-p
 kafka
+p
 www.dev
 cdn
 eu2
@@ -67,8 +67,8 @@ br
 wp
 crm
 admin-eu
-admin-us
 net
+admin-us
 portal
 office
 admin-us2
@@ -90,11 +90,11 @@ in
 jp
 *.1
 sandbox
+direct
 au
 my
 wordpress
 redirect
-direct
 uk
 imap
 hanacloud
