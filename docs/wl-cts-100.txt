@@ -62,8 +62,8 @@ kafka
 p
 www.dev
 cdn
-eu2
 br
+eu2
 wp
 crm
 admin-eu
@@ -72,8 +72,8 @@ admin-us
 portal
 office
 admin-us2
-co
 us-east-1
+co
 www.blog
 mobile
 multidomain-prober
@@ -88,9 +88,9 @@ de
 fr
 in
 jp
+direct
 *.1
 sandbox
-direct
 au
 my
 wordpress
