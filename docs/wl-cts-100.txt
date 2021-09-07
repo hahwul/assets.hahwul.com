@@ -62,13 +62,13 @@ kafka
 p
 www.dev
 cdn
-br
 eu2
+br
 wp
 crm
 admin-eu
-net
 admin-us
+net
 portal
 office
 admin-us2
