@@ -19,8 +19,8 @@ shop
 demo
 api
 vpn
-whm
 store
+whm
 admin
 database
 storage
@@ -87,8 +87,8 @@ stg
 de
 fr
 in
-jp
 direct
+jp
 *.1
 sandbox
 au
