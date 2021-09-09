@@ -85,9 +85,9 @@ worker
 redis
 stg
 de
+direct
 fr
 in
-direct
 jp
 *.1
 sandbox
@@ -96,5 +96,5 @@ my
 wordpress
 redirect
 uk
-imap
 hanacloud
+imap
