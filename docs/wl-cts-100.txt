@@ -63,12 +63,12 @@ p
 www.dev
 cdn
 eu2
-br
 wp
+br
 crm
 admin-eu
-admin-us
 net
+admin-us
 portal
 office
 admin-us2
