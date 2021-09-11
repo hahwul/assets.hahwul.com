@@ -83,9 +83,9 @@ media
 multisan
 worker
 redis
+direct
 stg
 de
-direct
 fr
 in
 jp
@@ -95,6 +95,6 @@ au
 my
 wordpress
 redirect
-uk
 hanacloud
+uk
 imap
