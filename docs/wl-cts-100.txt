@@ -62,8 +62,8 @@ kafka
 p
 www.dev
 cdn
-eu2
 wp
+eu2
 br
 crm
 admin-eu
@@ -82,8 +82,8 @@ cache
 media
 multisan
 worker
-redis
 direct
+redis
 stg
 de
 fr
