@@ -78,11 +78,11 @@ www.blog
 mobile
 multidomain-prober
 forum
+direct
 cache
 media
 multisan
 worker
-direct
 redis
 stg
 de
