@@ -67,8 +67,8 @@ eu2
 wp
 crm
 admin-eu
-net
 admin-us
+net
 portal
 office
 us-east-1
@@ -94,7 +94,7 @@ sandbox
 au
 my
 wordpress
-redirect
 hanacloud
+redirect
 uk
 imap
