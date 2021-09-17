@@ -53,8 +53,8 @@ us3
 org
 cloudapp
 www.test
-us2
 core
+us2
 secure
 containers
 kafka
