@@ -13,8 +13,8 @@ dev
 test
 staging
 blog
-m
 mesh
+m
 shop
 demo
 api
@@ -56,8 +56,8 @@ www.test
 core
 us2
 secure
-containers
 kafka
+containers
 stage
 p
 www.dev
