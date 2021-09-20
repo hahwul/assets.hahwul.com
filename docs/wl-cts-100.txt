@@ -26,8 +26,8 @@ database
 storage
 app
 ftp
-ftl
 smtp
+ftl
 cloud
 old
 es
