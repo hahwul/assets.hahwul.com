@@ -74,11 +74,11 @@ office
 us-east-1
 admin-us2
 co
-www.blog
 direct
+www.blog
 mobile
-multidomain-prober
 cache
+multidomain-prober
 forum
 media
 multisan
