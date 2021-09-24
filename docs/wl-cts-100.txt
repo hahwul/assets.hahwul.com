@@ -36,12 +36,12 @@ tls
 azurecertificateservice
 bastion
 en
-pop
 azure
+pop
 web
 ipv6
-eu
 prod
+eu
 us
 beta
 new
@@ -90,8 +90,8 @@ fr
 in
 jp
 *.1
-sandbox
 hanacloud
+sandbox
 au
 my
 wordpress
