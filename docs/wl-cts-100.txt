@@ -73,8 +73,8 @@ portal
 office
 us-east-1
 admin-us2
-co
 direct
+co
 www.blog
 mobile
 cache
@@ -95,6 +95,6 @@ sandbox
 au
 my
 wordpress
-redirect
 uk
+redirect
 imap
