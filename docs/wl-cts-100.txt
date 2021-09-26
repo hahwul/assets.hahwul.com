@@ -72,8 +72,8 @@ net
 portal
 office
 us-east-1
-admin-us2
 direct
+admin-us2
 co
 www.blog
 mobile
@@ -82,8 +82,8 @@ multidomain-prober
 forum
 media
 multisan
-worker
 redis
+worker
 stg
 de
 fr
