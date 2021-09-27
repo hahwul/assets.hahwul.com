@@ -55,8 +55,8 @@ cloudapp
 www.test
 core
 us2
-secure
 kafka
+secure
 containers
 stage
 p
@@ -70,8 +70,8 @@ admin-eu
 admin-us
 net
 portal
-office
 us-east-1
+office
 direct
 admin-us2
 co
