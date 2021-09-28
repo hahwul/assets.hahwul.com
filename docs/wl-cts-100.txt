@@ -71,8 +71,8 @@ admin-us
 net
 portal
 us-east-1
-office
 direct
+office
 admin-us2
 co
 www.blog
