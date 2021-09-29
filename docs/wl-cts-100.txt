@@ -69,9 +69,9 @@ crm
 admin-eu
 admin-us
 net
+direct
 portal
 us-east-1
-direct
 office
 admin-us2
 co
@@ -79,8 +79,8 @@ www.blog
 mobile
 cache
 multidomain-prober
-forum
 media
+forum
 multisan
 redis
 worker
