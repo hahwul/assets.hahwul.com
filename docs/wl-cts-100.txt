@@ -28,8 +28,8 @@ app
 ftp
 smtp
 ftl
-cloud
 old
+cloud
 es
 magento
 tls
@@ -67,9 +67,9 @@ br
 wp
 crm
 admin-eu
+direct
 admin-us
 net
-direct
 portal
 us-east-1
 office
@@ -89,8 +89,8 @@ de
 fr
 in
 jp
-*.1
 hanacloud
+*.1
 sandbox
 au
 my
