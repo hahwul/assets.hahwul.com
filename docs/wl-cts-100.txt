@@ -62,8 +62,8 @@ stage
 p
 www.dev
 cdn
-eu2
 br
+eu2
 wp
 crm
 admin-eu
@@ -79,8 +79,8 @@ www.blog
 mobile
 cache
 media
-multidomain-prober
 forum
+multidomain-prober
 redis
 multisan
 worker
@@ -89,11 +89,11 @@ de
 fr
 in
 jp
-hanacloud
 *.1
+hanacloud
 sandbox
-au
 my
+au
 wordpress
 uk
 redirect
