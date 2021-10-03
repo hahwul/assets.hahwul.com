@@ -66,8 +66,8 @@ br
 eu2
 wp
 crm
-admin-eu
 direct
+admin-eu
 admin-us
 net
 portal
@@ -78,8 +78,8 @@ co
 www.blog
 mobile
 cache
-media
 forum
+media
 multidomain-prober
 redis
 multisan
