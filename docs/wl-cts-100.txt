@@ -65,8 +65,8 @@ cdn
 br
 eu2
 wp
-crm
 direct
+crm
 admin-eu
 admin-us
 net
