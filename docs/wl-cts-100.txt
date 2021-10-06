@@ -21,8 +21,8 @@ api
 vpn
 store
 whm
-admin
 database
+admin
 storage
 app
 ftp
@@ -70,8 +70,8 @@ crm
 admin-eu
 admin-us
 net
-portal
 us-east-1
+portal
 office
 admin-us2
 co
