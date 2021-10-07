@@ -89,8 +89,8 @@ de
 fr
 in
 jp
-*.1
 hanacloud
+*.1
 sandbox
 my
 au
