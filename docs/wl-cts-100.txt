@@ -64,8 +64,8 @@ www.dev
 cdn
 br
 eu2
-wp
 direct
+wp
 crm
 admin-eu
 admin-us
