@@ -50,11 +50,11 @@ ap
 gcp
 support
 us3
-org
 cloudapp
+org
 www.test
-core
 kafka
+core
 us2
 secure
 containers
@@ -62,9 +62,9 @@ stage
 p
 www.dev
 cdn
+direct
 br
 eu2
-direct
 wp
 crm
 admin-eu
