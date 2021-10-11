@@ -11,8 +11,8 @@ cpcalendars
 com
 dev
 test
-staging
 blog
+staging
 mesh
 m
 shop
@@ -26,8 +26,8 @@ admin
 storage
 app
 ftp
-ftl
 smtp
+ftl
 old
 cloud
 es
@@ -60,9 +60,9 @@ secure
 containers
 stage
 p
+direct
 www.dev
 cdn
-direct
 br
 eu2
 wp
