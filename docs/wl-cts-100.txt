@@ -76,8 +76,8 @@ office
 admin-us2
 co
 www.blog
-mobile
 cache
+mobile
 worker
 redis
 forum
