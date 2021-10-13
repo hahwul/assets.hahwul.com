@@ -69,8 +69,8 @@ wp
 crm
 admin-eu
 admin-us
-net
 us-east-1
+net
 portal
 office
 admin-us2
@@ -88,8 +88,8 @@ stg
 de
 fr
 in
-jp
 hanacloud
+jp
 *.1
 sandbox
 my
