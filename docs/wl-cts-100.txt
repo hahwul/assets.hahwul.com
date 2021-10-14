@@ -97,4 +97,4 @@ au
 wordpress
 uk
 redirect
-imap
+us-west-2
