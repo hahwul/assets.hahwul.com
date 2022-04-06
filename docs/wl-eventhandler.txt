@@ -1,5 +1,4 @@
 json
-onactivate
 onafterprint
 onafterscriptexecute
 onanimationcancel
@@ -7,11 +6,8 @@ onanimationend
 onanimationiteration
 onanimationstart
 onauxclick
-onbeforeactivate
 onbeforecopy
 onbeforecut
-onbeforedeactivate
-onbeforepaste
 onbeforeprint
 onbeforescriptexecute
 onbeforeunload
@@ -28,7 +24,6 @@ oncopy
 oncuechange
 oncut
 ondblclick
-ondeactivate
 ondrag
 ondragend
 ondragenter
@@ -82,7 +77,6 @@ onpointerrawupdate
 onpointerup
 onpopstate
 onprogress
-onreadystatechange
 onrepeat
 onreset
 onresize
@@ -108,7 +102,6 @@ ontransitionstart
 onunhandledrejection
 onunload
 onvolumechange
-onwaiting
 onwebkitanimationend
 onwebkitanimationiteration
 onwebkitanimationstart
