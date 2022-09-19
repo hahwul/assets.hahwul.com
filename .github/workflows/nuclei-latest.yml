@@ -22,13 +22,6 @@ jobs:
     - name: Run app
       run: |
         ruby ./tools/nuclei-latest.rb
-  CI:
-    runs-on: ubuntu-latest
-    needs: [app]
-    steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 2
     - name: Commit files
       run: |
         git config --local user.email "hahwul@gmail.com"
