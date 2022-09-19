@@ -29,12 +29,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install dependency
         run: ./tools/dependency.sh
-      - name: Getting subs
-        run: ./tools/subs.sh
-      - name: Getting subnames
-        run: ./tools/subnames.sh
-      - name: Getting http URLs
-        run: ./tools/http.sh
       - name: Getting wordlists
         run: ./tools/wordlists.sh
       - name: Getting xss from portswigger
