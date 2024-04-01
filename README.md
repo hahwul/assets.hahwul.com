@@ -18,21 +18,12 @@
 - https://assets.hahwul.com/nuclei-latest.json (latest release nuclei-templates)
 
 #### Wordlsits
-- https://assets.hahwul.com/wl-assetnote-params.json
-  - https://assets.hahwul.com/wl-assetnote-params.txt
-- https://assets.hahwul.com/wl-b-headers.json
-  - https://assets.hahwul.com/wl-b-headers.txt
-- https://assets.hahwul.com/wl-cts-100.json
-  - https://assets.hahwul.com/wl-cts-100.txt
-- https://assets.hahwul.com/wl-cts-1000.json
-  - https://assets.hahwul.com/wl-cts-1000.txt
-- https://assets.hahwul.com/wl-cts-10000.json
-  - https://assets.hahwul.com/wl-cts-10000.txt
-- https://assets.hahwul.com/wl-cts-100000.json
-  - https://assets.hahwul.com/wl-cts-100000.txt
-- https://assets.hahwul.com/wl-eventhandler.json
-  - https://assets.hahwul.com/wl-eventhandler.txt
-- https://assets.hahwul.com/wl-headers.json
-  - https://assets.hahwul.com/wl-headers.txt
-- https://assets.hahwul.com/wl-params.json
-  - https://assets.hahwul.com/wl-params.txt
+- [wl-assetnote-params.txt](https://assets.hahwul.com/wl-assetnote-params.txt) ([metadata json](https://assets.hahwul.com/wl-assetnote-params.json))
+- [wl-b-headers.txt](https://assets.hahwul.com/wl-b-headers.txt) ([metadata json](https://assets.hahwul.com/wl-b-headers.json))
+- [wl-cts-100.txt](https://assets.hahwul.com/wl-cts-100.txt) ([metadata json](https://assets.hahwul.com/wl-cts-100.json))
+- [wl-cts-1000.txt](https://assets.hahwul.com/wl-cts-1000.txt) ([metadata json](https://assets.hahwul.com/wl-cts-1000.json))
+- [wl-cts-10000.txt](https://assets.hahwul.com/wl-cts-10000.txt) ([metadata json](https://assets.hahwul.com/wl-cts-10000.json))
+- [wl-cts-100000.txt](https://assets.hahwul.com/wl-cts-100000.txt) ([metadata json](https://assets.hahwul.com/wl-cts-100000.json))
+- [wl-eventhandler.txt](https://assets.hahwul.com/wl-eventhandler.txt) ([metadata json](https://assets.hahwul.com/wl-eventhandler.json))
+- [wl-headers.txt](https://assets.hahwul.com/wl-headers.txt) ([metadata json](https://assets.hahwul.com/wl-headers.json))
+- [wl-params.txt](https://assets.hahwul.com/wl-params.txt) ([metadata json](https://assets.hahwul.com/wl-params.json))
