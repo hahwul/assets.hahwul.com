@@ -26,7 +26,7 @@ jobs:
       run: |
         git config --local user.email "hahwul@gmail.com"
         git config --local user.name "hahwul"
-        git add deploy/nuclei-latest.json
+        git add docs/nuclei-latest.json
         git commit -m "Updated"
     - name: Push changes
       uses: ad-m/github-push-action@master
