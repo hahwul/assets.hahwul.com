@@ -1,5 +1,5 @@
 # Get xss payloads from portswigger
-curl https://raw.githubusercontent.com/PortSwigger/xss-cheatsheet-data/master/json/events.json | ~/go/bin/gron | grep "{}" | cut -d "." -f 2 | cut -d " " -f 1 | sort -u | tee ./docs/wl-eventhandler.txt
+curl https://raw.githubusercontent.com/PortSwigger/xss-cheatsheet-data/master/json/events.json | ~/go/bin/gron | grep "{}" | cut -d "." -f 2 | cut -d " " -f 1 | sort -u | tee ./deploy/wl-eventhandler.txt
 
 wget https://raw.githubusercontent.com/PortSwigger/xss-cheatsheet-data/master/json/classic.json -O ps-classic.json
 
@@ -26,15 +26,15 @@ wget https://raw.githubusercontent.com/PortSwigger/xss-cheatsheet-data/master/js
 wget https://raw.githubusercontent.com/PortSwigger/xss-cheatsheet-data/master/json/useful_tags.json -O ps-useful-tags.json
 
 # make xss payloads
-cat ps-*.json | grep "\"code\"" | cut -d "\"" -f 4-9999 | rev | cut -d "\"" -f 2-999 | rev |tee docs/xss-portswigger.txt
+cat ps-*.json | grep "\"code\"" | cut -d "\"" -f 4-9999 | rev | cut -d "\"" -f 2-999 | rev |tee deploy/xss-portswigger.txt
 
 # Calc
-LINE=`wc -l docs/wl-eventhandler.txt | cut -d " " -f 1`
-SIZE=`ls -alh docs/wl-eventhandler.txt | cut -d " " -f 5`
+LINE=`wc -l deploy/wl-eventhandler.txt | cut -d " " -f 1`
+SIZE=`ls -alh deploy/wl-eventhandler.txt | cut -d " " -f 5`
 LDATE=`date -R`
-echo \{\"path\":\"wl-eventhandler.txt\",\"line\":\"$LINE\",\"size\":\"$SIZE\",\"date\":\"$LDATE\"\} > docs/wl-eventhandler.json
+echo \{\"path\":\"wl-eventhandler.txt\",\"line\":\"$LINE\",\"size\":\"$SIZE\",\"date\":\"$LDATE\"\} > deploy/wl-eventhandler.json
 
-LINE=`wc -l docs/xss-portswigger.txt | cut -d " " -f 1`
-SIZE=`ls -alh docs/xss-portswigger.txt | cut -d " " -f 5`
+LINE=`wc -l deploy/xss-portswigger.txt | cut -d " " -f 1`
+SIZE=`ls -alh deploy/xss-portswigger.txt | cut -d " " -f 5`
 LDATE=`date -R`
-echo \{\"path\":\"xss-portswigger.txt\",\"line\":\"$LINE\",\"size\":\"$SIZE\",\"date\":\"$LDATE\"\} > docs/xss-portswigger.json
+echo \{\"path\":\"xss-portswigger.txt\",\"line\":\"$LINE\",\"size\":\"$SIZE\",\"date\":\"$LDATE\"\} > deploy/xss-portswigger.json

@@ -18,4 +18,4 @@ arr.each do |line|
   end
 end
 
-File.write("./docs/nuclei-latest.json",result.to_json)
+File.write("./deploy/nuclei-latest.json",result.to_json)

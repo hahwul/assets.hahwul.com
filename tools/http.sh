@@ -1,11 +1,11 @@
 # Make http
-#~/go/bin/httpx -l docs/bounty-subs.txt -threads 2000 -status-code -o docs/bounty-http.txt
+#~/go/bin/httpx -l deploy/bounty-subs.txt -threads 2000 -status-code -o deploy/bounty-http.txt
 
-# wc -l docs/bounty-http.txt | cut -d " " -f 1 | tee ./docs/line-bounty-http.txt
-# ls -alh docs/bounty-http.txt | cut -d " " -f 5 | tee ./docs/size-bounty-http.txt
+# wc -l deploy/bounty-http.txt | cut -d " " -f 1 | tee ./deploy/line-bounty-http.txt
+# ls -alh deploy/bounty-http.txt | cut -d " " -f 5 | tee ./deploy/size-bounty-http.txt
 
 # Calc http
-LINE=`wc -l docs/bounty-http.txt | cut -d " " -f 1`
-SIZE=`ls -alh docs/bounty-http.txt | cut -d " " -f 5`
+LINE=`wc -l deploy/bounty-http.txt | cut -d " " -f 1`
+SIZE=`ls -alh deploy/bounty-http.txt | cut -d " " -f 5`
 LDATE=`date -R`
-echo \{\"path\":\"bounty-http.txt\",\"line\":\"$LINE\",\"size\":\"$SIZE\",\"date\":\"$LDATE\"\} > docs/bounty-http.json
+echo \{\"path\":\"bounty-http.txt\",\"line\":\"$LINE\",\"size\":\"$SIZE\",\"date\":\"$LDATE\"\} > deploy/bounty-http.json

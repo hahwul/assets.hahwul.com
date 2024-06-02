@@ -1,1 +1,1 @@
-date | tee docs/last_change
+date | tee deploy/last_change
