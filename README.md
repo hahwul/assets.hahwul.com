@@ -1,3 +1,5 @@
+
+
 # Asset of hahwul.com
 
 [![Discovery](https://github.com/hahwul/asset-of-hahwul.com/actions/workflows/discovery.yml/badge.svg?branch=master)](https://github.com/hahwul/asset-of-hahwul.com/actions/workflows/discovery.yml)
@@ -17,7 +19,7 @@
 #### Nuclei templates
 - https://assets.hahwul.com/nuclei-latest.json (latest release nuclei-templates)
 
-#### Wordlsits
+#### Wordlists
 - [wl-assetnote-params.txt](https://assets.hahwul.com/wl-assetnote-params.txt) ([metadata json](https://assets.hahwul.com/wl-assetnote-params.json))
 - [wl-b-headers.txt](https://assets.hahwul.com/wl-b-headers.txt) ([metadata json](https://assets.hahwul.com/wl-b-headers.json))
 - [wl-cts-100.txt](https://assets.hahwul.com/wl-cts-100.txt) ([metadata json](https://assets.hahwul.com/wl-cts-100.json))
